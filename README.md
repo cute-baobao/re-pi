@@ -1,5 +1,9 @@
 # Agent Rebuild RoadMap
 
+[在线体验](https://re-pi-zeta.vercel.app) · [GitHub 仓库](https://github.com/cute-baobao/re-pi)
+
+这是一个面向 Pi Agent 与 DeepSeek Harness 的可持久化学习 RoadMap。勾选任务、记录笔记和耗时后，进度会保存在浏览器本地。
+
 这是 `pi-agent-roadmap.html` 的 Next.js App Router 版本。原始单文件 HTML 被保留为只读快照；Next.js 版本把内容、运行时校验、进度状态和界面拆开，便于持续补充学习资料与阶段任务。
 
 当前包含两份 RoadMap，共用同一套页面与进度组件：
@@ -34,6 +38,16 @@ npm run build
 ```
 
 `next.config.ts` 使用 `output: "export"`，构建结果位于 `out/`，可以交给任意静态文件服务器或静态托管平台。
+
+## Vercel 部署
+
+生产站点部署在 [re-pi-zeta.vercel.app](https://re-pi-zeta.vercel.app)。由于 `re-pi.vercel.app` 已被占用，Vercel 分配了当前可用的 `re-pi-zeta.vercel.app` 地址。
+
+向 GitHub 推送任意 tag（例如 `v0.1.0`）会触发 `.github/workflows/deploy-vercel.yml`，自动构建并部署到 Vercel 生产环境。需要在 GitHub 仓库的 **Settings → Secrets and variables → Actions** 中配置：
+
+- `VERCEL_TOKEN`：Vercel 个人访问令牌
+- `VERCEL_ORG_ID`：`team_sCIM0G2jEvpXhZW6IA5Bz2tY`
+- `VERCEL_PROJECT_ID`：`prj_rkJFVBJbGFxQ4aO9hiZVY5fx6JBf`
 
 ## 如何维护 RoadMap
 
