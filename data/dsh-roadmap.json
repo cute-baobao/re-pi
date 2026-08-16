@@ -1,0 +1,2058 @@
+{
+  "meta": {
+    "title": "DeepSeek Harness Rebuild RoadMap",
+    "repo": "https://github.com/deepseek-ai/deepseek-harness",
+    "sourceCommit": "47f943859bef60e4160492346772ded9b24f765a",
+    "sourceVersion": "0.1.0-rc.5",
+    "nodeVersion": "22.19",
+    "updatedAt": "2026-08-13"
+  },
+  "resources": {
+    "dshRoot": [
+      "DSH 仓库首页",
+      "https://github.com/deepseek-ai/deepseek-harness/tree/47f943859bef60e4160492346772ded9b24f765a",
+      "TS · 源码"
+    ],
+    "dshReadme": [
+      "DSH README(中文)",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/README.zh.md",
+      "中文 · 官方"
+    ],
+    "dshArch": [
+      "DSH 架构文档",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/architecture.zh.md",
+      "中文 · 官方"
+    ],
+    "dshLifecycle": [
+      "Agent 轮次与步骤生命周期",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/agent-lifecycle.zh.md",
+      "中文 · 时序图"
+    ],
+    "dshToolPipeline": [
+      "工具执行流水线",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/tool-execution-pipeline.zh.md",
+      "中文 · 流程图"
+    ],
+    "dshCordisPrimer": [
+      "Cordis 入门",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/cordis-primer.zh.md",
+      "中文 · 官方"
+    ],
+    "dshCordisTutorial": [
+      "Cordis 教程",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/cordis-tutorial/index.md",
+      "EN · 教程"
+    ],
+    "dshGraphAtlas": [
+      "依赖图谱",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/graph-atlas.zh.md",
+      "中文 · 官方"
+    ],
+    "dshModuleGraph": [
+      "模块图",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/module-graph.zh.md",
+      "中文 · 官方"
+    ],
+    "dshCapabilitySeams": [
+      "能力 Seam",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/capability-seams.zh.md",
+      "中文 · 官方"
+    ],
+    "dshEventMap": [
+      "事件生产方/消费方映射",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/event-producer-consumer.zh.md",
+      "中文 · 官方"
+    ],
+    "dshToolCatalog": [
+      "工具目录",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/tool-catalog.zh.md",
+      "中文 · 官方"
+    ],
+    "dshConfigCatalog": [
+      "配置目录",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/config-catalog.zh.md",
+      "中文 · 官方"
+    ],
+    "dshPersistenceCatalog": [
+      "持久化日志事件目录",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/persistence-catalog.zh.md",
+      "中文 · 官方"
+    ],
+    "dshGlossary": [
+      "术语表",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/glossary.zh.md",
+      "中文 · 官方"
+    ],
+    "dshDevelopment": [
+      "开发指南",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/development.zh.md",
+      "中文 · 官方"
+    ],
+    "dshTesting": [
+      "测试指南",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/testing.zh.md",
+      "中文 · 官方"
+    ],
+    "dshUserGuide": [
+      "Web UI 使用指南",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/user/guide/index.md",
+      "EN · 官方"
+    ],
+    "dshProviders": [
+      "模型配置指南",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/user/guide/providers.md",
+      "EN · 官方"
+    ],
+    "dshPythonSdk": [
+      "Python SDK 指南",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/user/guide/python-sdk.md",
+      "EN · 官方"
+    ],
+    "dshCookbook": [
+      "扩展实操手册",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/cookbook/extension-cookbook.md",
+      "EN · 实操"
+    ],
+    "dshAddTool": [
+      "添加一个工具",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/cookbook/adding-a-tool.md",
+      "EN · 实操"
+    ],
+    "dshAddLlm": [
+      "添加 LLM 适配器",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/cookbook/adding-an-llm-adapter.md",
+      "EN · 实操"
+    ],
+    "dshAddPackage": [
+      "添加一个包",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/cookbook/adding-a-package.md",
+      "EN · 实操"
+    ],
+    "dshAddNode": [
+      "添加 Conversation Node",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/cookbook/adding-a-conversation-node.md",
+      "EN · 实操"
+    ],
+    "dshCore": [
+      "核心包(agent / agent-loop)",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/subsystems/core.zh.md",
+      "中文 · 子系统"
+    ],
+    "dshSession": [
+      "会话(事件溯源)",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/subsystems/session.zh.md",
+      "中文 · 子系统"
+    ],
+    "dshSessionProjection": [
+      "会话投影",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/subsystems/session-projection.zh.md",
+      "中文 · 子系统"
+    ],
+    "dshSessionQuery": [
+      "会话查询",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/subsystems/session-query.zh.md",
+      "中文 · 子系统"
+    ],
+    "dshPersistence": [
+      "持久化",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/subsystems/persistence.zh.md",
+      "中文 · 子系统"
+    ],
+    "dshTools": [
+      "工具",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/subsystems/tools.zh.md",
+      "中文 · 子系统"
+    ],
+    "dshSystemPrompt": [
+      "系统提示词组装",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/subsystems/system-prompt.zh.md",
+      "中文 · 子系统"
+    ],
+    "dshScope": [
+      "作用域注册",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/subsystems/scope.zh.md",
+      "中文 · 子系统"
+    ],
+    "dshLlmStreaming": [
+      "LLM 流式输出",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/subsystems/llm-streaming.zh.md",
+      "中文 · 子系统"
+    ],
+    "dshSandbox": [
+      "进程沙箱",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/subsystems/sandbox.zh.md",
+      "中文 · 子系统"
+    ],
+    "dshApproval": [
+      "用户审批",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/subsystems/approval.zh.md",
+      "中文 · 子系统"
+    ],
+    "dshSubagent": [
+      "Subagent",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/subsystems/subagent.zh.md",
+      "中文 · 子系统"
+    ],
+    "dshCompaction": [
+      "压缩(compaction)",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/subsystems/compaction.zh.md",
+      "中文 · 子系统"
+    ],
+    "dshGoal": [
+      "同会话目标",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/subsystems/goal.zh.md",
+      "中文 · 子系统"
+    ],
+    "dshJobs": [
+      "后台任务运行时",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/subsystems/jobs.zh.md",
+      "中文 · 子系统"
+    ],
+    "dshPlan": [
+      "计划模式",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/subsystems/plan.zh.md",
+      "中文 · 子系统"
+    ],
+    "dshWorkflow": [
+      "工作流",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/subsystems/workflow.zh.md",
+      "中文 · 子系统"
+    ],
+    "dshWeb": [
+      "Web 访问 seam",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/subsystems/web.zh.md",
+      "中文 · 子系统"
+    ],
+    "dshFs": [
+      "文件系统",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/subsystems/filesystem.zh.md",
+      "中文 · 子系统"
+    ],
+    "dshShell": [
+      "Bash 执行器",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/subsystems/shell.zh.md",
+      "中文 · 子系统"
+    ],
+    "dshSubprocess": [
+      "子进程",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/subsystems/subprocess.zh.md",
+      "中文 · 子系统"
+    ],
+    "dshSkills": [
+      "Skills",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/subsystems/skills.zh.md",
+      "中文 · 子系统"
+    ],
+    "dshExtensions": [
+      "Extensions",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/subsystems/extensions.zh.md",
+      "中文 · 子系统"
+    ],
+    "dshSessionTelemetry": [
+      "会话遥测",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/subsystems/session-telemetry.zh.md",
+      "中文 · 子系统"
+    ],
+    "dshClientModules": [
+      "客户端模块",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/subsystems/client-modules.zh.md",
+      "中文 · 子系统"
+    ],
+    "dshWebServer": [
+      "Web 服务器",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/subsystems/web-server.zh.md",
+      "中文 · 子系统"
+    ],
+    "dshTokenMeter": [
+      "Token 计量",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/subsystems/token-meter.zh.md",
+      "中文 · 子系统"
+    ],
+    "dshAttachment": [
+      "附件",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/subsystems/attachment.zh.md",
+      "中文 · 子系统"
+    ],
+    "dshStorage": [
+      "存储",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/subsystems/storage.zh.md",
+      "中文 · 子系统"
+    ],
+    "dshSpill": [
+      "Spill 输出溢出",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/subsystems/spill.zh.md",
+      "中文 · 子系统"
+    ],
+    "dshCommands": [
+      "用户命令",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/subsystems/commands.zh.md",
+      "中文 · 子系统"
+    ],
+    "vendorCordis": [
+      "vendor/cordis README",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/vendor/cordis/README.md",
+      "TS · 源码"
+    ],
+    "pkgLlm": [
+      "packages/llm README",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/packages/llm/README.md",
+      "TS · 源码"
+    ],
+    "pkgSession": [
+      "packages/core/session README",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/packages/core/session/README.md",
+      "TS · 源码"
+    ],
+    "pkgTools": [
+      "packages/core/tools README",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/packages/core/tools/README.md",
+      "TS · 源码"
+    ],
+    "pkgAgent": [
+      "packages/core/agent README",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/packages/core/agent/README.md",
+      "TS · 源码"
+    ],
+    "pkgAgentLoop": [
+      "packages/core/agent-loop README",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/packages/core/agent-loop/README.md",
+      "TS · 源码"
+    ],
+    "pkgScope": [
+      "packages/core/scope README",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/packages/core/scope/README.md",
+      "TS · 源码"
+    ],
+    "pkgBoot": [
+      "packages/boot/app-boot README",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/packages/boot/app-boot/README.md",
+      "TS · 源码"
+    ],
+    "pkgBase": [
+      "dsh-base 组合包",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/packages/bundle/base/README.md",
+      "TS · 源码"
+    ],
+    "pkgWebApp": [
+      "dsh-web-app 组合包",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/packages/bundle/web-app/README.md",
+      "TS · 源码"
+    ],
+    "pkgHeadless": [
+      "dsh-headless 组合包",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/packages/bundle/headless/README.md",
+      "TS · 源码"
+    ],
+    "pkgCli": [
+      "apps/cli README",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/apps/cli/README.md",
+      "TS · 源码"
+    ],
+    "pkgSubagent": [
+      "packages/subagent README",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/packages/subagent/subagent/README.md",
+      "TS · 源码"
+    ],
+    "pkgWorkflow": [
+      "packages/workflow README",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/packages/workflow/workflow/README.md",
+      "TS · 源码"
+    ],
+    "pkgPlan": [
+      "packages/plan/plan-mode README",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/packages/plan/plan-mode/README.md",
+      "TS · 源码"
+    ],
+    "pkgCompaction": [
+      "packages/compaction README",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/packages/compaction/compaction/README.md",
+      "TS · 源码"
+    ],
+    "dshJsonRpc": [
+      "jsonrpc-agent 示例",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/examples/jsonrpc-agent/README.zh.md",
+      "TS · 示例"
+    ],
+    "dshAcp": [
+      "acp-agent 示例",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/examples/acp-agent/README.zh.md",
+      "TS · 示例"
+    ],
+    "dshHeadlessAgent": [
+      "headless-agent 示例",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/examples/headless-agent/README.md",
+      "TS · 示例"
+    ],
+    "cordisUpstream": [
+      "Cordis(上游)",
+      "https://github.com/cordiverse/cordis",
+      "TS · 开源"
+    ],
+    "cordisPaper": [
+      "A Programming Paradigm for Spatiotemporal Composability",
+      "https://github.com/cordiverse/paper",
+      "EN · 论文"
+    ],
+    "koishi": [
+      "Koishi(cordis 生态)",
+      "https://github.com/koishijs/koishi",
+      "TS · 开源"
+    ],
+    "acpSpec": [
+      "Agent Client Protocol(ACP)",
+      "https://github.com/agentclientprotocol/agent-client-protocol",
+      "EN · 规范"
+    ],
+    "landlock": [
+      "Landlock LSM 文档",
+      "https://docs.kernel.org/userspace-api/landlock.html",
+      "EN · 官方"
+    ],
+    "tsBook": [
+      "TypeScript Deep Dive",
+      "https://github.com/basarat/typescript-book",
+      "EN · 开源教材"
+    ],
+    "fullstackTs": [
+      "Full Stack Open · TypeScript",
+      "https://fullstackopen.com/en/part9",
+      "EN · 课程"
+    ],
+    "tsHandbook": [
+      "TypeScript Handbook",
+      "https://www.typescriptlang.org/docs/handbook/intro.html",
+      "EN · 官方"
+    ],
+    "missingCn": [
+      "计算机教育中缺失的一课 2026",
+      "https://missing-semester-cn.github.io/2026/",
+      "中文 · 开源课程"
+    ],
+    "nodeStreams": [
+      "Node.js Streams API",
+      "https://nodejs.org/api/stream.html",
+      "EN · 官方"
+    ],
+    "mdnStreams": [
+      "MDN Streams API Concepts",
+      "https://developer.mozilla.org/en-US/docs/Web/API/Streams_API/Concepts",
+      "中/EN · 文档"
+    ],
+    "vercelAi": [
+      "Vercel AI SDK",
+      "https://github.com/vercel/ai",
+      "TS · 开源"
+    ],
+    "helloAgents": [
+      "Hello-Agents",
+      "https://github.com/datawhalechina/hello-agents",
+      "中文 · 开源教材"
+    ],
+    "aiAgentBook": [
+      "AI Agent Harness Book",
+      "https://github.com/bojieli/ai-agent-book",
+      "中/EN · 开源书"
+    ],
+    "aiAgentCh1": [
+      "《深入理解 AI Agent》第 1 章:基础与 Harness",
+      "https://github.com/bojieli/ai-agent-book/blob/main/book/chapter1.md",
+      "中文 · 开源书"
+    ],
+    "aiAgentCh2": [
+      "《深入理解 AI Agent》第 2 章:上下文工程",
+      "https://github.com/bojieli/ai-agent-book/blob/main/book/chapter2.md",
+      "中文 · 开源书"
+    ],
+    "aiAgentCh3": [
+      "《深入理解 AI Agent》第 3 章:用户记忆与知识库",
+      "https://github.com/bojieli/ai-agent-book/blob/main/book/chapter3.md",
+      "中文 · 开源书"
+    ],
+    "aiAgentCh4": [
+      "《深入理解 AI Agent》第 4 章:工具",
+      "https://github.com/bojieli/ai-agent-book/blob/main/book/chapter4.md",
+      "中文 · 开源书"
+    ],
+    "aiAgentCh6": [
+      "《深入理解 AI Agent》第 6 章:Agent 评估",
+      "https://github.com/bojieli/ai-agent-book/blob/main/book/chapter6.md",
+      "中文 · 开源书"
+    ],
+    "helloMemory": [
+      "Hello-Agents 第 8 章:记忆与检索",
+      "https://github.com/datawhalechina/hello-agents/blob/main/docs/chapter8/%E7%AC%AC%E5%85%AB%E7%AB%A0%20%E8%AE%B0%E5%BF%86%E4%B8%8E%E6%A3%80%E7%B4%A2.md",
+      "中文 · 开源教材"
+    ],
+    "agentEffective": [
+      "Building Effective AI Agents",
+      "https://www.anthropic.com/engineering/building-effective-agents",
+      "EN · 工程指南"
+    ],
+    "openaiAgentGuide": [
+      "A Practical Guide to Building Agents",
+      "https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf",
+      "EN · 指南 PDF"
+    ],
+    "reactPaper": [
+      "ReAct 论文",
+      "https://arxiv.org/abs/2210.03629",
+      "EN · 论文"
+    ],
+    "twelveFactor": [
+      "12-Factor Agents",
+      "https://github.com/humanlayer/12-factor-agents",
+      "EN · 开源指南"
+    ],
+    "contextAnthropic": [
+      "Effective Context Engineering for AI Agents",
+      "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
+      "EN · 工程指南"
+    ],
+    "contextManus": [
+      "Manus:Context Engineering Lessons",
+      "https://manus.im/blog/Context-Engineering-for-AI-Agents-Lessons-from-Building-Manus",
+      "EN · 工程复盘"
+    ],
+    "contextLangChain": [
+      "LangChain:Context Engineering",
+      "https://www.langchain.com/blog/context-engineering-for-agents",
+      "EN · 概念指南"
+    ],
+    "lostMiddle": [
+      "Lost in the Middle",
+      "https://arxiv.org/abs/2307.03172",
+      "EN · 论文"
+    ],
+    "longHarness": [
+      "Effective Harnesses for Long-Running Agents",
+      "https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents",
+      "EN · 工程指南"
+    ],
+    "typebox": [
+      "TypeBox(仅用于读懂 schema DSL)",
+      "https://github.com/sinclairzx81/typebox",
+      "TS · 对照"
+    ],
+    "zod": [
+      "Zod GitHub",
+      "https://github.com/colinhacks/zod",
+      "TS · 开源"
+    ],
+    "zodDocs": [
+      "Zod documentation",
+      "https://zod.dev/",
+      "EN · 官方文档"
+    ],
+    "zodJsonSchema": [
+      "Zod · JSON Schema conversion",
+      "https://zod.dev/json-schema",
+      "EN · 官方文档"
+    ],
+    "jsonSchema": [
+      "Understanding JSON Schema",
+      "https://json-schema.org/understanding-json-schema",
+      "EN · 开源书"
+    ],
+    "toolformer": [
+      "Toolformer 论文",
+      "https://arxiv.org/abs/2302.04761",
+      "EN · 论文"
+    ],
+    "toolsAnthropic": [
+      "Writing Effective Tools for AI Agents",
+      "https://www.anthropic.com/engineering/writing-tools-for-agents",
+      "EN · 工程指南"
+    ],
+    "bfcl": [
+      "Berkeley Function Calling Leaderboard",
+      "https://github.com/ShishirPatil/gorilla/tree/main/berkeley-function-call-leaderboard",
+      "EN · 工具评测"
+    ],
+    "asyncBook": [
+      "JavaScript.info · Promises/async",
+      "https://javascript.info/async",
+      "中/EN · 教程"
+    ],
+    "jsonLines": [
+      "JSON Lines specification",
+      "https://jsonlines.org/",
+      "EN · 规范"
+    ],
+    "eventSourcing": [
+      "Martin Fowler · Event Sourcing",
+      "https://www.martinfowler.com/eaaDev/EventSourcing.html",
+      "EN · 架构文章"
+    ],
+    "proGit": [
+      "Pro Git",
+      "https://git-scm.com/book/zh/v2",
+      "中文 · 开源书"
+    ],
+    "letta": [
+      "Letta / MemGPT",
+      "https://github.com/letta-ai/letta",
+      "Python/TS · 开源"
+    ],
+    "langmem": [
+      "LangMem",
+      "https://github.com/langchain-ai/langmem",
+      "Python/TS · 开源"
+    ],
+    "graphiti": [
+      "Graphiti temporal graph",
+      "https://github.com/getzep/graphiti",
+      "Python · 开源"
+    ],
+    "coala": [
+      "CoALA:Cognitive Architectures for Language Agents",
+      "https://arxiv.org/abs/2309.02427",
+      "EN · 论文"
+    ],
+    "langchainMemory": [
+      "LangChain JS · Memory Overview",
+      "https://docs.langchain.com/oss/javascript/concepts/memory",
+      "EN · 概念文档"
+    ],
+    "langgraphMemory": [
+      "LangGraph JS · Add and Manage Memory",
+      "https://docs.langchain.com/oss/javascript/langgraph/add-memory",
+      "EN · 实现指南"
+    ],
+    "memgptPaper": [
+      "MemGPT 论文",
+      "https://arxiv.org/abs/2310.08560",
+      "EN · 论文"
+    ],
+    "vitest": [
+      "Vitest",
+      "https://vitest.dev/",
+      "TS · 开源"
+    ],
+    "fastCheck": [
+      "fast-check",
+      "https://github.com/dubzzz/fast-check",
+      "TS · 开源"
+    ],
+    "promptfoo": [
+      "Promptfoo",
+      "https://github.com/promptfoo/promptfoo",
+      "TS · 开源"
+    ],
+    "swebench": [
+      "SWE-bench",
+      "https://github.com/SWE-bench/SWE-bench",
+      "EN · 评测"
+    ]
+  },
+  "concepts": [
+    {
+      "id": "plugin-system",
+      "title": "一切皆插件:Cordis 上下文与可逆副作用",
+      "pi": "vendor/cordis · Context · Service · inject · emit/waterfall/parallel/serial · ctx.effect()",
+      "summary": "DSH 没有需要打补丁的特权内核。每一个能力都是插件:模型适配器、工具注册表、会话日志、agent loop 本身。扩展 harness 的方式是把插件挂载到其他插件旁边,而注册都是可逆副作用,会在插件卸载时撤销。",
+      "learn": [
+        "Context 为什么是服务的容器而不是对象组合",
+        "waterfall 的 next() 语义与短路决策",
+        "注册为何必须是可逆副作用(reload / teardown)",
+        "profile / bundle / patch overlay 如何组装插件树"
+      ],
+      "experiment": "写一个 30 行的最小 Cordis 应用:一个 Counter Service + 一个监听事件的插件,验证 ctx.on/emit 与 ctx.effect 的 dispose 顺序。",
+      "mastery": "我能解释“DSH 的每一部分都是插件”具体指什么,并指出某个新能力应该注册在哪个 ctx 服务与事件域上。",
+      "resources": [
+        [
+          "起点",
+          "dshCordisPrimer",
+          "先用中文建立 Context / Service / inject / 事件的整体模型。"
+        ],
+        [
+          "主线",
+          "cordisPaper",
+          "理解插件框架为何用“作用域 + 可逆副作用”表达组合。"
+        ],
+        [
+          "源码",
+          "vendorCordis",
+          "直接读 vendor 内嵌的 cordis 实现,对照 DSH 的用法。"
+        ],
+        [
+          "生态",
+          "koishi",
+          "cordis 最著名的宿主,观察大规模插件树的组织方式。"
+        ],
+        [
+          "实验",
+          "dshCordisTutorial",
+          "按教程一步步实现自己的插件。"
+        ]
+      ]
+    },
+    {
+      "id": "session-events",
+      "title": "事件溯源 Session:日志是真源",
+      "pi": "packages/core/session · SessionEventMap · turn/* · user/message · assistant/* · tool/* · deriveMessages",
+      "summary": "Session 是一份仅追加的类型化事件日志,是 agent 完整交互历史的唯一真源。模型历史从日志派生,从不单独存储;“模型可见即已记录”是一条运行时不变量——新增模型可见输入就必须新增会话事件。",
+      "learn": [
+        "为什么消息历史要从日志派生而不是单独存储",
+        "SessionEventMap 如何用声明合并扩展",
+        "回放、fork、transcript、遥测如何共享同一事件流",
+        "“模型可见即已记录”不变量为什么存在"
+      ],
+      "experiment": "用 fake model 跑 3 个 turn,把 session/event 追加到 JSONL,再仅凭日志重建模型历史,断言与内存派生结果一致。",
+      "mastery": "我能仅凭事件日志重建一次完整交互,并解释哪些字段是持久事实、哪些只是 UI 派生值。",
+      "resources": [
+        [
+          "起点",
+          "dshSession",
+          "先理解 SessionEventMap 与派生模型历史。"
+        ],
+        [
+          "主线",
+          "dshArch",
+          "在“会话日志”一节看事件如何贯穿系统。"
+        ],
+        [
+          "源码",
+          "pkgSession",
+          "读 session 包的 types 与投影实现。"
+        ],
+        [
+          "对照",
+          "eventSourcing",
+          "事件溯源的一般原则:日志是唯一事实。"
+        ],
+        [
+          "进阶",
+          "dshPersistenceCatalog",
+          "所有持久事件的目录,回放保真的依据。"
+        ]
+      ]
+    },
+    {
+      "id": "turn-loop",
+      "title": "Turn/Step 循环与事件总线",
+      "pi": "packages/core/agent-loop · turn/start · agent/pre-step · agent/request · step/end · agent/turn-stopping",
+      "summary": "一个步骤是一次模型请求加上它调用的工具;一个轮次包含零个或多个步骤,在不再欠下任何工作时关闭。事件就是扩展点:session 事件持久、agent 事件实时、capability 事件接缝。",
+      "learn": [
+        "turn/start 与 step/start 的边界",
+        "waterfall(pre-step / request)与 serial(turn-stopping)的区别",
+        "inbox 如何领取输入与 steering",
+        "拒绝或改写为空时为什么仍关闭持久轮次"
+      ],
+      "experiment": "实现一个最小 driver:接收输入 → pre-step → llm/stream → tool/result → 决定下一步或终止,并断言完整事件顺序。",
+      "mastery": "我能画出 turn/step 状态机,并指出每个事件属于哪个事件域、由谁生产、由谁消费。",
+      "resources": [
+        [
+          "起点",
+          "dshLifecycle",
+          "时序图把每个事件画在时间轴上。"
+        ],
+        [
+          "主线",
+          "dshArch",
+          "“轮次流程”一节是状态机的文字版。"
+        ],
+        [
+          "事件图",
+          "dshEventMap",
+          "所有事件的生产方与消费方。"
+        ],
+        [
+          "源码",
+          "pkgAgentLoop",
+          "读默认驱动器的实现。"
+        ]
+      ]
+    },
+    {
+      "id": "llm-seam",
+      "title": "模型层与流式输出",
+      "pi": "packages/llm · ContentBlockMap · Message · StreamChunk · adapter contract · ctx.llm",
+      "summary": "模型供应商会变,Agent 核心不应知道每家 API 的消息细节。内容块(text/reasoning/image/tool-call/tool-result)是共享词汇,适配器 seam 决定消息与流式 chunk 如何双向转换。",
+      "learn": [
+        "ContentBlock 为什么是可合并扩展的 map",
+        "assistant/chunk 与 assistant/message 的关系",
+        "适配器注册表与 provider/model 路由",
+        "usage、stopReason、错误如何进入持久事件"
+      ],
+      "experiment": "用 Zod 定义 provider-neutral schema,实现一个脚本化 FakeModel,并让最小 loop 消费其流式输出。",
+      "mastery": "我能为一家新供应商写适配器而不改动 agent loop,并解释 replay data 为什么必须是无损 JSON。",
+      "resources": [
+        [
+          "起点",
+          "dshLlmStreaming",
+          "内容块与消息词汇、流式 chunk 协议。"
+        ],
+        [
+          "源码",
+          "pkgLlm",
+          "读 types 与 assembler 实现。"
+        ],
+        [
+          "对照",
+          "vercelAi",
+          "一个工业级 provider-neutral 层。"
+        ],
+        [
+          "教材",
+          "tsHandbook",
+          "类型边界与声明合并。"
+        ]
+      ]
+    },
+    {
+      "id": "tools-pipeline",
+      "title": "工具注册表与执行流水线",
+      "pi": "packages/core/tools · ToolDefinition · output contract · tools/pre-execute → execute → post-execute · tool/result",
+      "summary": "工具是受约束的动作协议,不只是一个函数。schema、描述、选择、验证、执行、取消、错误、审批与结果规范化共同决定可靠性;流水线事件让策略与工具解耦。",
+      "learn": [
+        "ToolSchema(模型可见)与 ToolDefinition(宿主)为何分离",
+        "output contract 与 finalizeContent 保证什么",
+        "单调守卫与 approval 的顺序",
+        "并发语义:barriers 与 bounded rolling pool"
+      ],
+      "experiment": "注册 calculator / search / write-note 三个工具,挂一个 pre-execute 策略钩子(记录、审批、拒绝),验证三种结果。",
+      "mastery": "我能从 schema、执行语义与策略三个层面评审一个工具,并解释它如何在流水线中被拦截或改写。",
+      "resources": [
+        [
+          "起点",
+          "dshToolPipeline",
+          "流程图:从 model 到 tool/result 的完整路径。"
+        ],
+        [
+          "主线",
+          "dshTools",
+          "ToolDefinition 每个字段与类型化 schema DSL。"
+        ],
+        [
+          "源码",
+          "pkgTools",
+          "读注册表与流水线实现。"
+        ],
+        [
+          "指南",
+          "dshAddTool",
+          "按 cookbook 添加一个自己的工具。"
+        ],
+        [
+          "论文",
+          "toolformer",
+          "工具调用的起源与动机。"
+        ]
+      ]
+    },
+    {
+      "id": "capability-seams",
+      "title": "能力 Seam:定义、提供方与消费方",
+      "pi": "fs/shell/web/subagent/compaction · Service Definition + Provider + Consumer · ctx.fs · ctx.shell · ctx.web",
+      "summary": "一个 seam 是可替换能力的三件套:声明接口的 Service Definition、实现它的 Service Provider、使用它的 Consumer。替换一个提供方就能改变整个产品——把文件系统指向远程沙箱,bash/PTY/LSP 一并搬走。",
+      "learn": [
+        "seam 与普通服务的区别",
+        "为什么 web 的 search/fetch 共享一个 ctx.web",
+        "提供方注册表(subagent)与单执行器(bash)两种形态",
+        "isolate realm 与 per-agent ctx 隔离"
+      ],
+      "experiment": "为你的最小 harness 设计一个 web seam(search + fetch 两个操作),实现一个假提供方与一个工具消费方。",
+      "mastery": "我能为一个新能力画出三件套边界,并说明换提供方时什么保持不变。",
+      "resources": [
+        [
+          "起点",
+          "dshCapabilitySeams",
+          "seam 的三种角色与组合规则。"
+        ],
+        [
+          "子系统",
+          "dshFs",
+          "文件系统 seam 的实例。"
+        ],
+        [
+          "子系统",
+          "dshShell",
+          "bash 执行 seam 的实例。"
+        ],
+        [
+          "子系统",
+          "dshWeb",
+          "search/fetch 双操作 seam 的实例。"
+        ],
+        [
+          "实操",
+          "dshCookbook",
+          "把功能映射到能力与三件套。"
+        ]
+      ]
+    },
+    {
+      "id": "sandbox-approval",
+      "title": "沙箱、审批与失败闭合",
+      "pi": "ctx.sandbox · SandboxMode · approval/request · ApprovalOutcome · ask/never",
+      "summary": "审批提示不是安全边界。DSH 在模型之外执行:文件效果策略(read-only / workspace-write / danger-full-access)、按调用解析的沙箱策略、失败闭合的审批结果与审计事件对。",
+      "learn": [
+        "SandboxMode 只管控文件效果,不承诺网络与进程可见性",
+        "enforcement full/partial 为什么必须向上暴露",
+        "ApprovalOutcome 失败闭合:unavailable 也拒绝",
+        "per-session approval policy 的可回放性"
+      ],
+      "experiment": "写一个危险工具(rm),挂 approval 应答者,验证 allowed-once / rejected / never 三种路径,并断言日志中 approval/asked ↔ approval/decided 配对。",
+      "mastery": "我能画出一条攻击链,并指出每个缓解措施由模型、Harness、OS 还是网络层执行。",
+      "resources": [
+        [
+          "起点",
+          "dshSandbox",
+          "沙箱模式与强制完整性。"
+        ],
+        [
+          "起点",
+          "dshApproval",
+          "审批词汇与失败闭合语义。"
+        ],
+        [
+          "子系统",
+          "dshFs",
+          "先读后写守卫与新鲜度策略。"
+        ],
+        [
+          "子系统",
+          "dshSubprocess",
+          "受管环境命名空间与凭据清除。"
+        ],
+        [
+          "工程指南",
+          "toolsAnthropic",
+          "如何把工具设计得安全可审计。"
+        ]
+      ]
+    },
+    {
+      "id": "subagent-jobs",
+      "title": "委派:Subagent、Job 与 Workflow",
+      "pi": "ctx.subagents · providers · continuation · ctx.jobs · workflow engine · send_message/interrupt_agent",
+      "summary": "一个 agent 可以把工作委派给子 agent:进程内、fork、ACP、Codex、Claude Code、DSH SDK 都是同一接口后的提供方。后台任务与编排脚本(job registry、workflow engine)则是更长生命周期委派的两条通道。",
+      "learn": [
+        "subagent seam 与 bash 的单执行器有何不同",
+        "one-shot 与 continuable 的两种生命周期",
+        "job registry:生产者拥有资源,运行时拥有身份与访问",
+        "workflow 引擎为何隔离在 worker thread 中"
+      ],
+      "experiment": "实现 in-process subagent provider + send_message/interrupt 控制面,再用 workflow 脚本扇出 3 个子任务并汇总结果。",
+      "mastery": "我能为一个委派场景选择 subagent / job / workflow,并说清归属、访问控制与取消语义。",
+      "resources": [
+        [
+          "起点",
+          "dshSubagent",
+          "提供方契约与两类发现方式。"
+        ],
+        [
+          "源码",
+          "pkgSubagent",
+          "读 seam 类型与 continuation 实现。"
+        ],
+        [
+          "后台任务",
+          "dshJobs",
+          "job 注册表的身份与生命周期。"
+        ],
+        [
+          "工作流",
+          "dshWorkflow",
+          "worker-thread 引擎的边界。"
+        ],
+        [
+          "指南",
+          "longHarness",
+          "长运行 agent 的工程模式。"
+        ]
+      ]
+    },
+    {
+      "id": "memory-compaction",
+      "title": "上下文预算与压缩",
+      "pi": "ctx.compaction · compaction/start|summary|end · agent/pre-step · shadowedRange · token meter",
+      "summary": "上下文窗口有限,但压缩是有损操作。DSH 在 pre-step 处理压力:先记录锁(compaction/start),生成摘要、用 user/message 的 surfaceOp replace 替换范围,最后释放锁——原始事件永远保留在日志里。",
+      "learn": [
+        "为什么摘要承载在 user/message(surface replace)而非独立事件",
+        "锁(compaction/start→end)如何让崩溃可检测",
+        "shadowedRange 是位置跨度而非数值区间",
+        "预算触发:为下一轮输出预留空间"
+      ],
+      "experiment": "实现一个 basic compaction 后端:超预算时对最旧范围生成摘要并替换,断言 shadowedSeqs 与被遮蔽内容一致。",
+      "mastery": "我能设计一份可恢复的 compaction schema,并用行为 eval 证明它没有丢掉关键约束。",
+      "resources": [
+        [
+          "起点",
+          "dshCompaction",
+          "压缩事件、锁与 surface replace。"
+        ],
+        [
+          "概念",
+          "contextAnthropic",
+          "上下文工程:来源、优先级、预算。"
+        ],
+        [
+          "论文",
+          "lostMiddle",
+          "长上下文的“中间迷失”现象。"
+        ],
+        [
+          "源码",
+          "pkgCompaction",
+          "读 basic 后端的实现。"
+        ]
+      ]
+    },
+    {
+      "id": "eval-observability",
+      "title": "评测、Telemetry 与可观测性",
+      "pi": "session-telemetry · persistence-catalog · e2e lane · snapshot · 红队",
+      "summary": "Agent 的最终文本可能说“完成了”,真正 outcome 却失败。评测必须同时观察 trajectory、工具调用、环境终态、成本、时延与多次试验方差;telemetry 与事件目录让每次运行可重建。",
+      "learn": [
+        "测试金字塔:unit / property / integration / e2e",
+        "为什么 snapshot 与事件目录能证明回放保真",
+        "行为 eval:工具选择、参数正确性、约束遵守",
+        "红队:注入、工具投毒、secret 外泄、坏 frame"
+      ],
+      "experiment": "为你的 harness 写 5 个行为 eval 用例 + 1 个注入红队用例,断言拒绝路径与终态。",
+      "mastery": "我能为一个 Agent 能力写出可重复任务、环境终态 grader 与 trajectory 诊断。",
+      "resources": [
+        [
+          "起点",
+          "dshTesting",
+          "DSH 的测试策略与分层。"
+        ],
+        [
+          "目录",
+          "dshToolCatalog",
+          "每个工具的可测契约。"
+        ],
+        [
+          "事件图",
+          "dshEventMap",
+          "事件即可观测性的骨架。"
+        ],
+        [
+          "评测",
+          "bfcl",
+          "函数调用能力的公开评测。"
+        ],
+        [
+          "红队",
+          "dshDevelopment",
+          "开发与安全回归指南。"
+        ]
+      ]
+    }
+  ],
+  "roadmap": [
+    {
+      "id": "foundation",
+      "title": "定位、环境与源码地图",
+      "weeks": "1 周",
+      "hours": "8–12h",
+      "output": "能运行 dsh,并画出插件树与包依赖图",
+      "why": "先确认“你在复刻什么”。DSH 是一棵 Cordis 插件树,不是单个 while-loop 文件;产品能力分散在 60+ 个包与子系统文档中。",
+      "resources": [
+        "dshReadme",
+        "dshArch",
+        "dshCordisPrimer",
+        "dshGraphAtlas",
+        "dshDevelopment",
+        "cordisUpstream",
+        "cordisPaper",
+        "tsBook",
+        "zod",
+        "zodDocs"
+      ],
+      "tasks": [
+        [
+          "建立学习仓库与实验日志",
+          "创建 packages/core、packages/runtime、packages/cli、packages/evals 目录和 ADR 模板;每个阶段保留 design-notes.md。",
+          "仓库能安装、测试;README 写明目标、非目标与安全声明。",
+          [
+            "dshDevelopment",
+            "dshArch"
+          ]
+        ],
+        [
+          "运行并观察 dsh",
+          "从源码安装 DSH,运行 dsh web 与 headless 模式,用 --dump-config 打印配置树,保存一段事件输出。",
+          "能解释 profile/bundle/patch 如何组装配置树,以及 Web UI 与 headless 的差异。",
+          [
+            "dshReadme",
+            "dshArch"
+          ]
+        ],
+        [
+          "绘制插件与包依赖图",
+          "标出 vendor/cordis → core(session/tools/agent/agent-loop) → 能力包(fs/shell/web/subagent) → bundle(base/web-app/headless) → apps(cli/web)。",
+          "每条依赖都有理由;没有把 Web GUI 当作 Agent 核心。",
+          [
+            "dshArch",
+            "dshGraphAtlas"
+          ]
+        ],
+        [
+          "读懂 Cordis 五个核心概念",
+          "用 Context、Service、inject、类型化事件(emit/waterfall/parallel/serial)、可逆副作用解释 DSH 的一次插件加载。",
+          "能指出 ctx.tools、ctx.llm、ctx.sessions 是谁注册的,以及 reload 时注册如何撤销。",
+          [
+            "dshCordisPrimer",
+            "dshCordisTutorial",
+            "vendorCordis"
+          ]
+        ],
+        [
+          "用 Zod 建立 TypeScript 类型工具箱",
+          "用 z.object()、z.discriminatedUnion() 定义 Message/ContentBlock;用 z.infer 推导静态类型,用 safeParse() 收窄 unknown。",
+          "Message/ContentBlock 只有一份 Zod schema 作为事实源;非法 unknown 输入返回结构化错误。",
+          [
+            "zod",
+            "zodDocs",
+            "tsHandbook"
+          ]
+        ],
+        [
+          "写第一份架构决策 ADR",
+          "解释为何选择“一切皆插件 + 事件溯源会话”作为复刻主线。",
+          "ADR 包含该路线的收益、局限、备选方案与退出条件,而非只有结论。",
+          [
+            "dshArch",
+            "cordisPaper"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "model-layer",
+      "title": "统一模型层与消息类型",
+      "weeks": "1 周",
+      "hours": "10–14h",
+      "output": "最小 Model Adapter + provider-neutral messages",
+      "why": "模型供应商会变,Agent 核心不应知道每家 API 的消息细节。DSH 用 ContentBlockMap 与 adapter contract 隔离这一层。",
+      "resources": [
+        "dshLlmStreaming",
+        "pkgLlm",
+        "vercelAi",
+        "tsHandbook",
+        "zod"
+      ],
+      "tasks": [
+        [
+          "读懂 DSH 的类型边界",
+          "整理 ContentBlock(text/reasoning/image/tool-call/tool-result)、Message、StreamChunk、Usage、StopReason 的关系。",
+          "写出一页类型图,并指出 streaming partial 与 terminal message 的区别。",
+          [
+            "dshLlmStreaming",
+            "pkgLlm"
+          ]
+        ],
+        [
+          "用 Zod 定义 provider-neutral schema",
+          "只保留核心需要的 user/assistant/toolResult 与内容块,并通过 z.infer 生成 TypeScript 类型。",
+          "Zod schema 能验证 text、reasoning、toolCall、usage、错误和取消;静态类型不再手工重复声明。",
+          [
+            "zod",
+            "dshLlmStreaming"
+          ]
+        ],
+        [
+          "实现模型注册表",
+          "按 provider/modelId 查找适配器、上下文窗口与能力;实现“同一上下文多提供方”的注册语义。",
+          "注册表能拒绝未知 provider,并支持按名称覆盖提供方。",
+          [
+            "dshLlmStreaming",
+            "pkgLlm"
+          ]
+        ],
+        [
+          "实现一个 FakeModel",
+          "用脚本化响应模拟文本、工具调用、错误与截断,支持流式 chunk 输出。",
+          "最小 loop 能消费 FakeModel 的完整事件序列。",
+          [
+            "zod",
+            "dshTesting"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "streaming",
+      "title": "流式事件与 Provider Adapter",
+      "weeks": "1–2 周",
+      "hours": "12–16h",
+      "output": "可测试的统一事件流",
+      "why": "Agent 体验和正确性都建立在事件顺序上;“等完整 JSON 返回”会掩盖取消、半包与工具增量。DSH 用 assistant/chunk 与 llm/stream waterfall 表达这一切。",
+      "resources": [
+        "dshLlmStreaming",
+        "dshLifecycle",
+        "vercelAi",
+        "nodeStreams",
+        "mdnStreams"
+      ],
+      "tasks": [
+        [
+          "定义事件状态机",
+          "设计 start/delta/done/error,明确消息何时从 pending 变为 terminal(assistant/message)。",
+          "状态机覆盖取消、超时与半包;每次转换都有可测试事件。",
+          [
+            "dshLlmStreaming",
+            "dshLifecycle"
+          ]
+        ],
+        [
+          "实现 AsyncIterable stream",
+          "支持订阅、聚合最终结果、错误传播与 AbortSignal。",
+          "stream 能并行扇出多个监听者,取消后不再产生事件。",
+          [
+            "nodeStreams",
+            "dshLlmStreaming"
+          ]
+        ],
+        [
+          "实现首个真实 Provider Adapter",
+          "选择一个供应商,把请求与事件双向转换为统一类型,并在请求中携带 provider/model 来源。",
+          "adapter 通过注册表挂载,替换 adapter 不改变 agent loop。",
+          [
+            "vercelAi",
+            "dshLlmStreaming"
+          ]
+        ],
+        [
+          "实现重试与退避边界",
+          "只对可重试错误退避,遵守 Retry-After,并让取消立即生效。",
+          "断网与 429 场景下,重试不会掩盖取消,错误以结构化形式进入日志。",
+          [
+            "dshLlmStreaming",
+            "dshEventMap"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "agent-loop",
+      "title": "最小 Agent Loop 与状态机",
+      "weeks": "1–2 周",
+      "hours": "14–18h",
+      "output": "无 UI 的可运行 Agent Core",
+      "why": "这是项目的发动机:输入、模型决策、工具观察与下一轮必须是可推理、可停止的状态迁移。DSH 用 turn/step 双层状态机表达。",
+      "resources": [
+        "dshArch",
+        "dshLifecycle",
+        "pkgAgentLoop",
+        "aiAgentCh1",
+        "agentEffective"
+      ],
+      "tasks": [
+        [
+          "手写单轮循环",
+          "输入 prompt,组装上下文,流式调用模型,把最终 assistant message 追加到 session 日志。",
+          "能解释 turn/start → agent/request → llm/stream → step/end 的完整顺序。",
+          [
+            "dshLifecycle",
+            "pkgAgentLoop"
+          ]
+        ],
+        [
+          "扩展为多轮 tool loop",
+          "检测 toolCall,执行后追加 tool/result,再请求模型;支持 claim 下一条输入。",
+          "同一 turn 内能完成多步,并在不再欠工作时关闭轮次。",
+          [
+            "dshLifecycle",
+            "dshArch"
+          ]
+        ],
+        [
+          "实现事件总线",
+          "持久化 turn/*、user/message、assistant/*、tool/* 事件;实时暴露 agent/* 事件。",
+          "UI 与 SDK 只靠事件就能重建一次交互。",
+          [
+            "dshSession",
+            "dshEventMap"
+          ]
+        ],
+        [
+          "加入终止与预算",
+          "支持 maxTurns、timeout、token/cost budget,以及 agent/turn-stopping 检查点。",
+          "预算耗尽与自然终止走同一条可回放路径。",
+          [
+            "dshArch",
+            "dshLifecycle"
+          ]
+        ],
+        [
+          "加入 steering / follow-up 队列",
+          "实现 inbox:立即唤醒的输入与等待的注入上下文分开处理。",
+          "steer 与 inject 都能在下一个被接受的 pre-step 进入请求。",
+          [
+            "dshArch",
+            "pkgAgentLoop"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "工具系统、Schema 与执行语义",
+      "weeks": "1–2 周",
+      "hours": "14–18h",
+      "output": "安全、可取消、可组合的 Tool Runtime",
+      "why": "工具调用把概率输出变成真实副作用;工程质量集中体现在验证、并发、错误与策略边界。DSH 用 ToolDefinition 输出契约与三段式流水线表达。",
+      "resources": [
+        "dshToolPipeline",
+        "dshTools",
+        "dshAddTool",
+        "zodJsonSchema",
+        "toolsAnthropic",
+        "bfcl"
+      ],
+      "tasks": [
+        [
+          "用 Zod 定义 Tool contract",
+          "每个工具提供 name、description、Zod input schema、execute、canonical output 契约与 metadata;从 Zod schema 生成模型需要的 JSON Schema。",
+          "工具注册表只向模型暴露 ToolSchema;output/execute 绝不泄漏到请求中。",
+          [
+            "dshTools",
+            "zodJsonSchema"
+          ]
+        ],
+        [
+          "实现注册、发现与参数校验",
+          "处理未知工具、重复名称、额外字段、缺失字段和类型错误。",
+          "校验失败返回结构化错误,且不会把内部异常泄漏给模型。",
+          [
+            "dshTools",
+            "zod"
+          ]
+        ],
+        [
+          "明确并发语义",
+          "无依赖调用并发执行;需要顺序的工具提供显式策略(isConcurrencySafe)。",
+          "并发与顺序工具混合时,结果与模型调用顺序一致。",
+          [
+            "dshToolPipeline",
+            "dshTools"
+          ]
+        ],
+        [
+          "实现进度、取消与超时",
+          "工具通过事件回传进度,并响应 AbortSignal;实现 timeout 与 result 快照。",
+          "取消后工具不再产生副作用;快照失败的候选结果被规范化。",
+          [
+            "dshToolPipeline",
+            "dshTools"
+          ]
+        ],
+        [
+          "做三个教学工具",
+          "calculator、in-memory search、需要审批的 write-note。",
+          "write-note 通过 approval seam,拒绝/允许/never 三路径都有日志证据。",
+          [
+            "dshTools",
+            "dshApproval"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "events-seams",
+      "title": "事件领域与能力 Seam",
+      "weeks": "1–2 周",
+      "hours": "12–16h",
+      "output": "可替换提供方的能力边界",
+      "why": "事件是扩展点,seam 是可替换能力。选对事件域是大多数改动的第一个决定;把策略从实现里拆出来,是 DSH 架构的命门。",
+      "resources": [
+        "dshArch",
+        "dshEventMap",
+        "dshCapabilitySeams",
+        "dshScope",
+        "dshCookbook"
+      ],
+      "tasks": [
+        [
+          "区分三种事件域",
+          "会话事件(持久)、agent 事件(实时)、能力事件(fs/*、tools/*、telemetry/*)。",
+          "对任一事件都能说出:持久还是实时、谁生产、谁消费、是否 waterfall。",
+          [
+            "dshArch",
+            "dshEventMap"
+          ]
+        ],
+        [
+          "实现 waterfall 语义",
+          "实现 pre-step / tools/pre-execute / agent/request 的包装中间件,支持短路与替换。",
+          "策略监听器可短路决策;观察型监听器必须委托 next()。",
+          [
+            "dshCordisPrimer",
+            "dshArch"
+          ]
+        ],
+        [
+          "设计一个能力 seam",
+          "选择 fs 或 web,画出 Service Definition + Provider + Consumer 三件套。",
+          "替换提供方后,工具与策略代码零改动。",
+          [
+            "dshCapabilitySeams",
+            "dshFs",
+            "dshWeb"
+          ]
+        ],
+        [
+          "实现作用域注册",
+          "用 ScopeKey/Scoped 实现 per-agent 隔离:同一上下文表达每个 agent 的可见性与共享生命周期。",
+          "一个 agent 注册的工具/提示词片段不会泄漏给另一个 agent。",
+          [
+            "dshScope",
+            "dshArch"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "sessions",
+      "title": "事件溯源 Session 与持久化",
+      "weeks": "1–2 周",
+      "hours": "12–18h",
+      "output": "可回放、可恢复、可分支的持久会话",
+      "why": "聊天数组无法表达分支、模型切换、压缩和扩展事件。DSH 用 append-only JSON 日志保存事实,再派生活动状态。",
+      "resources": [
+        "dshSession",
+        "dshPersistence",
+        "dshPersistenceCatalog",
+        "dshSessionQuery",
+        "jsonLines",
+        "eventSourcing"
+      ],
+      "tasks": [
+        [
+          "定义 append-only entry schema",
+          "每行包含 type、id、seq、timestamp 与特定 payload;序号连续、无损 JSON。",
+          "日志可原样持久化;未知版本条目有明确策略。",
+          [
+            "dshSession",
+            "dshPersistenceCatalog"
+          ]
+        ],
+        [
+          "实现 deriveMessages",
+          "从日志投影模型历史;原始 assistant/chunk 保证回放与 UI 保真。",
+          "“模型可见即已记录”不变量由测试断言。",
+          [
+            "dshSession",
+            "dshPersistence"
+          ]
+        ],
+        [
+          "实现 resume / fork / transcript",
+          "恢复同一会话、从历史点分叉、导出可移植 transcript。",
+          "fork 出的会话与源会话共享前缀事件,分歧从 boundary 开始。",
+          [
+            "dshSession",
+            "dshSessionQuery"
+          ]
+        ],
+        [
+          "实现原子与并发写入策略",
+          "明确单写者、flush、锁或队列语义;崩溃后遗留状态可检测。",
+          "并发写不产生交错损坏;crash 后可恢复。",
+          [
+            "dshPersistence",
+            "dshPersistenceCatalog"
+          ]
+        ],
+        [
+          "写 Session migration 测试",
+          "为版本字段、未知 entry 与未来兼容制定策略。",
+          "旧格式日志能被新代码安全读取并给出诊断。",
+          [
+            "dshPersistenceCatalog",
+            "dshTesting"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "memory",
+      "title": "Compaction 与上下文预算",
+      "weeks": "1–2 周",
+      "hours": "12–16h",
+      "output": "可度量的上下文压缩器",
+      "why": "上下文窗口有限,但压缩是有损操作。应保存原始事实,把摘要视为可替换的派生物;DSH 用锁 + surface replace 表达这一过程。",
+      "resources": [
+        "dshCompaction",
+        "contextAnthropic",
+        "lostMiddle",
+        "aiAgentCh2",
+        "letta",
+        "langmem"
+      ],
+      "tasks": [
+        [
+          "实现 token budget 触发器",
+          "估算消息成本,在阈值前预留下一轮输出与工具空间;压力信号接入 pre-step。",
+          "触发器在真正溢出前介入,而不是等请求失败。",
+          [
+            "dshCompaction",
+            "dshArch"
+          ]
+        ],
+        [
+          "实现可恢复摘要",
+          "compaction/start 记录锁 → 生成摘要 → compaction/summary + user/message(surfaceOp replace) → compaction/end 释放锁。",
+          "崩溃表现为可检测的遗留锁;摘要只替换目标范围。",
+          [
+            "dshCompaction",
+            "dshPersistenceCatalog"
+          ]
+        ],
+        [
+          "比较三种记忆层",
+          "对话压缩、结构化事实、可检索长期记忆分别做小实验。",
+          "能说明 context/session/long-term 各自的持久化与召回策略。",
+          [
+            "letta",
+            "langmem",
+            "coala"
+          ]
+        ],
+        [
+          "建立 compaction eval",
+          "用 TypeScript fixture 设计针刺信息、关键约束、已完成修改与时间关系测试集。",
+          "压缩后行为 eval 不退化;关键约束被保留。",
+          [
+            "dshCompaction",
+            "dshTesting"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "coding-tools",
+      "title": "编码工具、信任与沙箱",
+      "weeks": "2 周",
+      "hours": "16–22h",
+      "output": "有策略边界的 coding runtime",
+      "why": "read/bash/edit/write 看似简单,却同时涉及路径穿越、竞态、命令注入、secret 和不可逆副作用。DSH 用 fs/shell/sandbox/approval 四条 seam 分别约束。",
+      "resources": [
+        "dshFs",
+        "dshShell",
+        "dshSubprocess",
+        "dshSandbox",
+        "dshApproval",
+        "toolsAnthropic"
+      ],
+      "tasks": [
+        [
+          "实现 fs seam 与先读后写守卫",
+          "规范化路径、处理 symlink、限制大小与二进制内容;write/edit 带新鲜度守卫。",
+          "未先读就写会被策略拒绝;路径穿越失败闭合。",
+          [
+            "dshFs",
+            "dshTools"
+          ]
+        ],
+        [
+          "实现可验证 edit",
+          "支持精确 old/new 或 patch,检测零匹配、多匹配与并发修改。",
+          "失败返回结构化错误,不产生部分写入。",
+          [
+            "dshFs",
+            "dshTools"
+          ]
+        ],
+        [
+          "实现 bash runner",
+          "分离 argv/shell 模式,流式 stdout/stderr,处理 timeout、signal 与 output cap(spill)。",
+          "输出截断有 spill 路径;取消立即生效。",
+          [
+            "dshShell",
+            "dshSubprocess"
+          ]
+        ],
+        [
+          "加入 sandbox 与审批策略",
+          "实现 read-only / workspace-write / danger-full-access 三模式;approval ask/never 失败闭合。",
+          "越权操作被 sandbox/approval 阻断,审计事件成对出现。",
+          [
+            "dshSandbox",
+            "dshApproval"
+          ]
+        ],
+        [
+          "在沙箱运行不可信任务",
+          "用 Landlock/Seatbelt/ACL 或远程后端隔离工作区,区分 full/partial 强制。",
+          "不可信指令无法越出工作区;partial 强制被显式暴露。",
+          [
+            "dshSandbox",
+            "dshDevelopment"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "web-ui",
+      "title": "Web GUI 与事件驱动界面",
+      "weeks": "1–2 周",
+      "hours": "12–16h",
+      "output": "只消费事件的浏览器界面",
+      "why": "UI 应是状态的观察者和控制器,而不是第二套 Agent 状态。DSH 的 Web 前端从 session/event 渲染,用 conversation node 扩展界面。",
+      "resources": [
+        "dshWebServer",
+        "dshClientModules",
+        "pkgWebApp",
+        "dshAddNode",
+        "dshUserGuide"
+      ],
+      "tasks": [
+        [
+          "读懂 host/client 拆分",
+          "理解 dsh 进程(host)与浏览器前端(client)如何通过会话事件同步。",
+          "能画出事件从 driver 到 UI 渲染的完整路径。",
+          [
+            "dshWebServer",
+            "dshClientModules"
+          ]
+        ],
+        [
+          "实现事件时间线 renderer",
+          "显示 streaming text、reasoning、工具调用卡(pending/completed)、error 与 usage。",
+          "UI 仅靠 session/event 重建一次交互,无第二份状态。",
+          [
+            "dshSession",
+            "dshClientModules"
+          ]
+        ],
+        [
+          "实现输入与控制",
+          "prompt、steer、approval 应答、plan mode 切换都调用核心公开 API。",
+          "每个控制操作都在日志中留下可回放事件。",
+          [
+            "dshArch",
+            "dshPlan"
+          ]
+        ],
+        [
+          "处理会话与节点细节",
+          "会话 composer、approval 对话框、自定义 conversation node。",
+          "能注册一个新的 keyed renderer 而不改核心。",
+          [
+            "dshAddNode",
+            "dshClientModules"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "subagents",
+      "title": "Subagent、Jobs 与并发委派",
+      "weeks": "1–2 周",
+      "hours": "12–16h",
+      "output": "可委派、可控制、可取消的子 agent 运行时",
+      "why": "把工作委派给子 agent 是 Agent 的放大手段,也是访问控制与取消语义最容易出错的边界。DSH 用 subagent seam + job runtime + workflow 三层表达。",
+      "resources": [
+        "dshSubagent",
+        "dshJobs",
+        "dshWorkflow",
+        "pkgSubagent",
+        "longHarness"
+      ],
+      "tasks": [
+        [
+          "设计 subagent seam",
+          "定义 SubagentProvider 契约、能力 flag 与单次启动请求。",
+          "不支持的能力在启动时被显式拒绝,绝不静默忽略。",
+          [
+            "dshSubagent",
+            "pkgSubagent"
+          ]
+        ],
+        [
+          "实现 in-process provider 与可继续子 agent",
+          "子 agent 继承父的 cwd、谱系与深度;实现 continuation 管理器。",
+          "子 agent 的会话可续跑,发送消息走同一会话。",
+          [
+            "dshSubagent",
+            "dshSession"
+          ]
+        ],
+        [
+          "实现控制工具",
+          "send_message / interrupt_agent / list_agents,定义取消语义。",
+          "中断只停止当前 turn,不破坏子 agent 会话。",
+          [
+            "dshSubagent",
+            "dshToolCatalog"
+          ]
+        ],
+        [
+          "实现 job runtime 与 workflow",
+          "job 注册表(身份/访问/生命周期)+ worker-thread workflow 引擎。",
+          "长时间任务可查询、可停止;workflow 扇出受 maxTotalAgents 约束。",
+          [
+            "dshJobs",
+            "dshWorkflow"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "protocols",
+      "title": "SDK、RPC 与 Client/Server 协议",
+      "weeks": "2 周",
+      "hours": "16–22h",
+      "output": "同一核心的三种集成边界",
+      "why": "嵌入同进程、控制子进程和远程会话是不同信任/故障模型。DSH 提供 in-process ctx API、JSONL RPC、ACP 与 Python SDK 等边界。",
+      "resources": [
+        "dshArch",
+        "dshJsonRpc",
+        "dshAcp",
+        "dshPythonSdk",
+        "dshHeadlessAgent",
+        "dshUserGuide",
+        "acpSpec"
+      ],
+      "tasks": [
+        [
+          "提炼稳定 SDK surface",
+          "暴露 createSession/fork、followup、subscribe(session/event)、abort 与 snapshot。",
+          "SDK 消费方只依赖公开词汇,不碰内部可变状态。",
+          [
+            "dshArch",
+            "dshSession"
+          ]
+        ],
+        [
+          "实现 JSONL RPC",
+          "参考 examples/jsonrpc-agent:stdin 接收命令,stdout 只发事件。",
+          "请求-响应与事件流分离;坏 frame 失败闭合。",
+          [
+            "dshJsonRpc",
+            "jsonLines"
+          ]
+        ],
+        [
+          "实现 ACP 集成",
+          "读懂 Agent Client Protocol,把 dsh agent 暴露为 ACP server。",
+          "外部 ACP 客户端能启动会话、订阅事件、提交 followup。",
+          [
+            "dshAcp",
+            "acpSpec"
+          ]
+        ],
+        [
+          "实现 Python SDK 客户端",
+          "用 Python SDK 启动 agent、订阅事件与权威 snapshot。",
+          "Python 客户端与 TS 客户端看到同一事件流。",
+          [
+            "dshPythonSdk",
+            "dshSession"
+          ]
+        ],
+        [
+          "实现 session server 与 lease",
+          "认证在 transport 前完成;支持 exclusive/shared acquisition 与释放。",
+          "并发客户端不会互相踩踏会话状态。",
+          [
+            "dshArch",
+            "dshPersistence"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "quality",
+      "title": "测试、Telemetry、Eval 与安全回归",
+      "weeks": "2 周",
+      "hours": "18–24h",
+      "output": "能证明改动没有让 Agent 退化",
+      "why": "Agent 的“偶尔成功”没有工程意义。需要分别验证确定性 runtime、模型行为、系统任务与对抗边界。",
+      "resources": [
+        "dshTesting",
+        "dshToolCatalog",
+        "dshDevelopment",
+        "dshEventMap",
+        "swebench",
+        "promptfoo",
+        "fastCheck",
+        "vitest"
+      ],
+      "tasks": [
+        [
+          "建立测试金字塔",
+          "单测类型/状态机,property test 协议,snapshot 测试事件目录,integration test fake model,e2e 隔离任务。",
+          "状态机与协议改动有自动化覆盖,快照测试在 CI 中防回归。",
+          [
+            "dshTesting",
+            "vitest",
+            "fastCheck"
+          ]
+        ],
+        [
+          "设计 Agent trace",
+          "一个 run 为根 span,model/tool/compaction 为 child span,记录 token、延迟与 stop reason。",
+          "从 trace 能重建一次运行的成本与失败点。",
+          [
+            "dshEventMap",
+            "dshDevelopment"
+          ]
+        ],
+        [
+          "建立行为 eval 数据集",
+          "用 TypeScript 覆盖工具选择、参数正确性、任务完成、约束遵守、恢复与成本。",
+          "eval 在每次改动后运行,量化退化。",
+          [
+            "dshTesting",
+            "promptfoo",
+            "bfcl"
+          ]
+        ],
+        [
+          "做 coding task benchmark",
+          "从 10 个本地 issue 开始,再理解 SWE-bench 的容器、patch 与 test 判定。",
+          "能复现基准的判定逻辑并报告通过率。",
+          [
+            "swebench",
+            "dshDevelopment"
+          ]
+        ],
+        [
+          "做红队与故障注入",
+          "测试 prompt injection、tool poisoning、secret exfiltration、无限循环、断网、坏 frame。",
+          "每条攻击链都有对应缓解措施与失败闭合断言。",
+          [
+            "dshDevelopment",
+            "dshSandbox"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "capstone-build",
+      "title": "Capstone:从零组装 Bao Agent Harness",
+      "weeks": "2–3 周",
+      "hours": "20–28h",
+      "output": "可演示、可评测、可解释的完整系统",
+      "why": "最后用一个窄而真实的 coding 场景,把所有层连起来;先做纵向切片,再增加 provider、UI 和远程能力。",
+      "resources": [
+        "dshArch",
+        "dshLifecycle",
+        "dshToolPipeline",
+        "dshCapabilitySeams",
+        "dshTesting",
+        "dshCookbook"
+      ],
+      "tasks": [
+        [
+          "冻结 v0.1 架构与范围",
+          "只支持一个 provider、read/search/edit/test 四工具、单工作区沙箱和单会话。",
+          "范围、非目标与安全声明写入 README 与 ADR。",
+          [
+            "dshArch",
+            "dshCookbook"
+          ]
+        ],
+        [
+          "完成 TypeScript vertical slice",
+          "core → session → tools → loop → CLI,一条命令处理示例 issue。",
+          "在隔离仓库里能完成“读任务 → 找代码 → 改代码 → 跑测试”。",
+          [
+            "dshLifecycle",
+            "dshToolPipeline"
+          ]
+        ],
+        [
+          "完成 Eval Harness",
+          "用 Vitest、fast-check 和 Promptfoo 运行固定任务、property tests 与红队案例。",
+          "所有 eval 一条命令可跑,结果可对比基线。",
+          [
+            "dshTesting",
+            "promptfoo"
+          ]
+        ],
+        [
+          "完成集成客户端",
+          "用 Node.js 或 Python 启动 agent,订阅事件与权威 snapshot,并提供最小控制界面。",
+          "客户端与核心通过公开事件词汇通信,零内部状态访问。",
+          [
+            "dshSession",
+            "dshPythonSdk"
+          ]
+        ],
+        [
+          "完成安全与可靠性演示",
+          "展示不可信指令试图越权,以及 sandbox/approval/policy 如何阻止。",
+          "演示脚本断言阻断路径与审计事件。",
+          [
+            "dshSandbox",
+            "dshApproval"
+          ]
+        ],
+        [
+          "写复盘与 v0.2 决策",
+          "比较你的实现与 DSH:保留了什么、简化了什么、哪里失败、下一步依据是什么。",
+          "复盘记录架构差异与取舍依据,形成 v0.2 路线。",
+          [
+            "dshArch",
+            "dshCookbook"
+          ]
+        ]
+      ]
+    }
+  ],
+  "display": {
+    "wordmark": "DSH / Rebuild",
+    "wordmarkNote": "next · local tracker",
+    "eyebrow": "DEEPSEEK HARNESS · FROM SOURCE TO SYSTEM",
+    "heroTitle": "把 DeepSeek Harness 拆开,再亲手装回去",
+    "heroLeadBefore": "目标不是“会调用一个 Harness”,而是理解并实现 ",
+    "heroLeadStrong": "Plugin Tree → Session Log → Turn Loop → Tool Pipeline → Seam → Web GUI → Protocol → Eval",
+    "heroLeadAfter": " 的每一层。",
+    "repoLabel": "跟踪仓库",
+    "repoName": "deepseek-ai/deepseek-harness",
+    "repoUrl": "https://github.com/deepseek-ai/deepseek-harness",
+    "language": "TypeScript",
+    "license": "MIT",
+    "safetyTitle": "安全边界:",
+    "safetyNote": "DSH 默认以当前用户权限运行,依赖 approval(ask/never、失败闭合)与 sandbox(read-only / workspace-write / danger-full-access)约束工具副作用。学习 coding-tools 阶段必须把信任、审批、最小权限与沙箱当成核心功能,而不是附加配置。",
+    "sourceBoundaryTitle": "源码边界",
+    "sourceBoundaryText": "DeepSeek Harness 是 MIT 开源的完整实现主线,代码与文档(architecture、subsystems、cookbook)都随仓库发布。Cordis 作为 vendor 依赖内置于仓库(vendor/cordis),可对照上游理解插件框架本身;Agent Client Protocol(ACP)与 Python SDK 则适合观察跨进程集成边界。来源不明的泄露、反编译仓库不进入本路线。",
+    "sourceBoundaryLinks": [
+      [
+        "DSH 仓库",
+        "https://github.com/deepseek-ai/deepseek-harness"
+      ],
+      [
+        "Cordis 上游",
+        "https://github.com/cordiverse/cordis"
+      ],
+      [
+        "ACP 规范",
+        "https://github.com/agentclientprotocol/agent-client-protocol"
+      ]
+    ],
+    "conceptHeadTitle": "核心概念资料图谱",
+    "conceptHeadText": "资料按“心智模型 → 中文系统读物 → 论文/工程经验 → DSH 对照源码 → 小实验”排序。仓库只是证据之一;真正目标是能解释设计取舍,并用实验看到它为何存在。",
+    "mindModelTitle": "第一步:建立正确心智模型",
+    "mindModelLead": "DSH 不是一个 while-loop 文件,而是一棵可组合的插件树。产品能力(模型适配器、工具、会话、Web GUI、评测)都以插件形式挂载到 Cordis 上下文上;事件不是日志的附属品,而是系统本身的扩展点。",
+    "conceptMap": [
+      {
+        "agent": "目标与终止",
+        "impl": "goals · plan mode · agent/turn-stopping · budget",
+        "note": "系统要知道“想完成什么、什么时候停”。DSH 用持久化的 goal 领域与轮次终止检查点表达可恢复的完成语义。"
+      },
+      {
+        "agent": "状态与观察",
+        "impl": "SessionEventMap · AgentState · agent/* 事件",
+        "note": "Agent 不是一次问答。会话是一份仅追加事件日志;消息历史、UI 状态与回放都从日志派生。"
+      },
+      {
+        "agent": "策略与推理",
+        "impl": "agent/pre-step · system-prompt/assemble · llm/stream",
+        "note": "模型根据压缩后的上下文选择下一步。pre-step waterfall 决定模型看到什么,reasoning 块与可见文本分离。"
+      },
+      {
+        "agent": "动作与工具",
+        "impl": "ToolDefinition · pre-execute → execute → post-execute",
+        "note": "工具把语言决策变成外部动作。schema、输出契约、并发、取消、审批与结果规范化决定系统是否可靠。"
+      },
+      {
+        "agent": "反馈与控制",
+        "impl": "tool/result · agent.inject/steer · approval",
+        "note": "动作结果必须回到上下文形成下一轮观察;人类 steering、approval 与 abort 在循环外提供控制面。"
+      },
+      {
+        "agent": "记忆与持续性",
+        "impl": "persistence · compaction/start|summary|end · session-query",
+        "note": "短期上下文不等于长期记忆。DSH 把原始事件日志、压缩摘要和派生 UI 状态明确分开。"
+      },
+      {
+        "agent": "Harness",
+        "impl": "ctx 服务树 · capability seam · extensions/skills",
+        "note": "Agent = Model + Harness。Harness 通过可替换的 Service Definition / Provider / Consumer 组织能力,并用作用域注册隔离每个 agent。"
+      },
+      {
+        "agent": "边界与协议",
+        "impl": "JSONL RPC · ACP · Python SDK · Web client",
+        "note": "把核心状态与 UI、进程、网络解耦,才能嵌入 IDE、Web 应用或远程执行环境,并独立验证每一层。"
+      }
+    ],
+    "loopTitle": "一个 Agent Turn 到底发生什么",
+    "loopLead": "阅读 docs/agent-lifecycle.md 与 packages/core/agent-loop 时,始终把代码对应到这个状态机。完成工具调用后不是“返回答案”,而是把 tool/result 追加回日志,再让模型决定下一步。",
+    "loopSteps": [
+      [
+        "01 · RECEIVE",
+        "接收 prompt / steering / inbox 消息"
+      ],
+      [
+        "02 · CLAIM",
+        "turn/start,领取 next-step 输入与一条队列消息"
+      ],
+      [
+        "03 · ASSEMBLE",
+        "组装提示词片段与工具 schema"
+      ],
+      [
+        "04 · STREAM",
+        "agent/request → llm/stream → assistant/chunk*"
+      ],
+      [
+        "05 · DECIDE",
+        "回答、调用工具或停止"
+      ],
+      [
+        "06 · GATE",
+        "tools/pre-execute:钩子、审批、沙箱守卫"
+      ],
+      [
+        "07 · EXECUTE",
+        "并发/顺序执行与取消"
+      ],
+      [
+        "08 · OBSERVE",
+        "tool/result 落日志,派生上下文,继续或满足终止条件"
+      ]
+    ],
+    "loopNote": "贯穿全程的控制面:agent/pre-step · approval · sandbox · compaction 压力 · steering · telemetry · plan mode。",
+    "routeTitle": "单语言路线:TypeScript 做到底",
+    "routeLead": "DSH 的核心包、工具流水线、Session、协议与 Web 前端都是 TypeScript。学习阶段统一使用 TypeScript + Node.js,把时间集中在 Agent Harness 的架构与运行语义上。",
+    "routeRole": "ONLY TRACK · 唯一实现主线",
+    "routeHeading": "TypeScript + Zod + Node.js",
+    "routeThesis": "从 Plugin Tree 一直实现到 Eval Harness 与 Web/CLI。Zod schema 是运行时边界的事实源,TypeScript 通过 z.infer 获得静态类型,Node.js 承担运行时;测试使用 Vitest / fast-check,行为评测和红队使用 TypeScript 脚本与 Promptfoo。其他语言项目(如 Python SDK)只作为集成边界阅读材料,不进入实现栈。",
+    "capstoneTitle": "最终作品:Bao Agent Harness",
+    "capstoneLead": "不是 DSH 的逐行复制,而是保留它最值得学习的分层:一切皆插件、事件溯源会话、流水线式工具执行、能力 seam 与明确安全边界。",
+    "capstonePoint": "第一条垂直场景:让 Agent 在一个隔离的示例仓库里读取任务、搜索代码、提出补丁、运行测试,并产出带证据的完成报告。",
+    "architecture": [
+      [
+        "core-ts",
+        "messages · content blocks · adapter · stream · loop"
+      ],
+      [
+        "session-ts",
+        "event log · deriveMessages · fork/replay · persistence"
+      ],
+      [
+        "tools-ts",
+        "registry · pipeline · approval · sandbox"
+      ],
+      [
+        "seams-ts",
+        "fs · shell · web · subagent · compaction"
+      ],
+      [
+        "protocol-ts",
+        "JSONL RPC · ACP · SDK"
+      ],
+      [
+        "web-cli-ts",
+        "session composer · event timeline · conversation nodes"
+      ]
+    ],
+    "sourceNote": "路线快照:基于 DeepSeek Harness v{version}、commit {commit}({date})。DSH 正处于开发者预览、快速迭代阶段,所以源码链接固定到该提交;学习思想可持续,文件路径以后可能变化。",
+    "footerText": "DeepSeek Harness Rebuild RoadMap · 数据仅存本机",
+    "footerLink": [
+      "查看 DSH 源码",
+      "https://github.com/deepseek-ai/deepseek-harness"
+    ],
+    "exportFilePrefix": "dsh-roadmap-progress",
+    "nextAllDone": "全部完成,可以开始写 v0.2 决策 ADR",
+    "searchPlaceholder": "输入 turn、tool、session、seam 或安全…",
+    "searchEmpty": "没有结果。试试 turn、tool、session、seam 或安全。"
+  }
+}

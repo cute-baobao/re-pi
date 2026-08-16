@@ -1,0 +1,9 @@
+{
+  "scannedAt": "2026-08-12",
+  "framework": "vanilla HTML migrating to Next.js App Router",
+  "fontStack": ["Space Grotesk", "Inter", "JetBrains Mono"],
+  "palette": "existing cobalt tokens.css",
+  "motion": "motion-cut",
+  "spacing": "existing --space-* token scale",
+  "preserve": ["pi-agent-roadmap.html", "tokens.css", "Narrative Workflow", "Cobalt", "N13", "Ft2"]
+}

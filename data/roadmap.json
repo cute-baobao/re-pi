@@ -1,0 +1,1886 @@
+{
+  "meta": {
+    "title": "Pi Agent Rebuild RoadMap",
+    "repo": "https://github.com/earendil-works/pi",
+    "sourceCommit": "9795d602306ef68a97585909e8e79f92a389057b",
+    "sourceVersion": "0.84.1",
+    "nodeVersion": "22.19",
+    "updatedAt": "2026-08-12"
+  },
+  "resources": {
+    "pi": [
+      "Pi 仓库 README",
+      "https://github.com/earendil-works/pi/tree/9795d602306ef68a97585909e8e79f92a389057b",
+      "EN · 源码"
+    ],
+    "piRootPkg": [
+      "Pi root package.json / scripts",
+      "https://github.com/earendil-works/pi/blob/9795d602306ef68a97585909e8e79f92a389057b/package.json",
+      "EN · 源码"
+    ],
+    "aiReadme": [
+      "pi-ai README",
+      "https://github.com/earendil-works/pi/blob/9795d602306ef68a97585909e8e79f92a389057b/packages/ai/README.md",
+      "EN · 源码"
+    ],
+    "aiTypes": [
+      "pi-ai types.ts",
+      "https://github.com/earendil-works/pi/blob/9795d602306ef68a97585909e8e79f92a389057b/packages/ai/src/types.ts",
+      "TS · 源码"
+    ],
+    "aiModels": [
+      "pi-ai models.ts",
+      "https://github.com/earendil-works/pi/blob/9795d602306ef68a97585909e8e79f92a389057b/packages/ai/src/models.ts",
+      "TS · 源码"
+    ],
+    "aiTransform": [
+      "transform-messages.ts",
+      "https://github.com/earendil-works/pi/blob/9795d602306ef68a97585909e8e79f92a389057b/packages/ai/src/api/transform-messages.ts",
+      "TS · 源码"
+    ],
+    "aiStream": [
+      "event-stream.ts",
+      "https://github.com/earendil-works/pi/blob/9795d602306ef68a97585909e8e79f92a389057b/packages/ai/src/utils/event-stream.ts",
+      "TS · 源码"
+    ],
+    "aiRetry": [
+      "retry.ts",
+      "https://github.com/earendil-works/pi/blob/9795d602306ef68a97585909e8e79f92a389057b/packages/ai/src/utils/retry.ts",
+      "TS · 源码"
+    ],
+    "aiProviders": [
+      "Pi provider adapters",
+      "https://github.com/earendil-works/pi/tree/9795d602306ef68a97585909e8e79f92a389057b/packages/ai/src/providers",
+      "TS · 源码"
+    ],
+    "agentReadme": [
+      "pi-agent-core README",
+      "https://github.com/earendil-works/pi/blob/9795d602306ef68a97585909e8e79f92a389057b/packages/agent/README.md",
+      "EN · 源码"
+    ],
+    "agentTypes": [
+      "agent types.ts",
+      "https://github.com/earendil-works/pi/blob/9795d602306ef68a97585909e8e79f92a389057b/packages/agent/src/types.ts",
+      "TS · 源码"
+    ],
+    "agentLoop": [
+      "agent-loop.ts",
+      "https://github.com/earendil-works/pi/blob/9795d602306ef68a97585909e8e79f92a389057b/packages/agent/src/agent-loop.ts",
+      "TS · 源码"
+    ],
+    "agentClass": [
+      "agent.ts",
+      "https://github.com/earendil-works/pi/blob/9795d602306ef68a97585909e8e79f92a389057b/packages/agent/src/agent.ts",
+      "TS · 源码"
+    ],
+    "harness": [
+      "agent-harness.ts",
+      "https://github.com/earendil-works/pi/blob/9795d602306ef68a97585909e8e79f92a389057b/packages/agent/src/harness/agent-harness.ts",
+      "TS · 源码"
+    ],
+    "harnessSession": [
+      "Harness session modules",
+      "https://github.com/earendil-works/pi/tree/9795d602306ef68a97585909e8e79f92a389057b/packages/agent/src/harness/session",
+      "TS · 源码"
+    ],
+    "harnessMemory": [
+      "harness/session/memory.ts",
+      "https://github.com/earendil-works/pi/blob/9795d602306ef68a97585909e8e79f92a389057b/packages/agent/src/harness/session/memory.ts",
+      "TS · 源码"
+    ],
+    "harnessCompaction": [
+      "Harness compaction modules",
+      "https://github.com/earendil-works/pi/tree/9795d602306ef68a97585909e8e79f92a389057b/packages/agent/src/harness/compaction",
+      "TS · 源码"
+    ],
+    "harnessTools": [
+      "Harness coding tools",
+      "https://github.com/earendil-works/pi/tree/9795d602306ef68a97585909e8e79f92a389057b/packages/agent/src/harness/tools",
+      "TS · 源码"
+    ],
+    "codingReadme": [
+      "pi-coding-agent README",
+      "https://github.com/earendil-works/pi/blob/9795d602306ef68a97585909e8e79f92a389057b/packages/coding-agent/README.md",
+      "EN · 源码"
+    ],
+    "agentSession": [
+      "coding-agent AgentSession",
+      "https://github.com/earendil-works/pi/blob/9795d602306ef68a97585909e8e79f92a389057b/packages/coding-agent/src/core/agent-session.ts",
+      "TS · 源码"
+    ],
+    "resourceLoader": [
+      "resource-loader.ts",
+      "https://github.com/earendil-works/pi/blob/9795d602306ef68a97585909e8e79f92a389057b/packages/coding-agent/src/core/resource-loader.ts",
+      "TS · 源码"
+    ],
+    "sessionFormat": [
+      "Pi Session Format",
+      "https://github.com/earendil-works/pi/blob/9795d602306ef68a97585909e8e79f92a389057b/packages/coding-agent/docs/session-format.md",
+      "EN · 源码"
+    ],
+    "sessionsDoc": [
+      "Pi Sessions guide",
+      "https://github.com/earendil-works/pi/blob/9795d602306ef68a97585909e8e79f92a389057b/packages/coding-agent/docs/sessions.md",
+      "EN · 源码"
+    ],
+    "compactionDoc": [
+      "Pi Compaction guide",
+      "https://github.com/earendil-works/pi/blob/9795d602306ef68a97585909e8e79f92a389057b/packages/coding-agent/docs/compaction.md",
+      "EN · 源码"
+    ],
+    "extensionsDoc": [
+      "Pi Extensions guide",
+      "https://github.com/earendil-works/pi/blob/9795d602306ef68a97585909e8e79f92a389057b/packages/coding-agent/docs/extensions.md",
+      "EN · 源码"
+    ],
+    "skillsDoc": [
+      "Pi Skills guide",
+      "https://github.com/earendil-works/pi/blob/9795d602306ef68a97585909e8e79f92a389057b/packages/coding-agent/docs/skills.md",
+      "EN · 源码"
+    ],
+    "sdkDoc": [
+      "Pi SDK guide",
+      "https://github.com/earendil-works/pi/blob/9795d602306ef68a97585909e8e79f92a389057b/packages/coding-agent/docs/sdk.md",
+      "EN · 源码"
+    ],
+    "rpcDoc": [
+      "Pi RPC mode",
+      "https://github.com/earendil-works/pi/blob/9795d602306ef68a97585909e8e79f92a389057b/packages/coding-agent/docs/rpc.md",
+      "EN · 源码"
+    ],
+    "tuiDoc": [
+      "Pi TUI guide",
+      "https://github.com/earendil-works/pi/blob/9795d602306ef68a97585909e8e79f92a389057b/packages/coding-agent/docs/tui.md",
+      "EN · 源码"
+    ],
+    "tuiSource": [
+      "pi-tui source",
+      "https://github.com/earendil-works/pi/tree/9795d602306ef68a97585909e8e79f92a389057b/packages/tui/src",
+      "TS · 源码"
+    ],
+    "trust": [
+      "project-trust.ts",
+      "https://github.com/earendil-works/pi/blob/9795d602306ef68a97585909e8e79f92a389057b/packages/coding-agent/src/cli/project-trust.ts",
+      "TS · 源码"
+    ],
+    "protocol": [
+      "pi-protocol README",
+      "https://github.com/earendil-works/pi/blob/9795d602306ef68a97585909e8e79f92a389057b/packages/protocol/README.md",
+      "EN · 源码"
+    ],
+    "client": [
+      "pi-client README",
+      "https://github.com/earendil-works/pi/blob/9795d602306ef68a97585909e8e79f92a389057b/packages/client/README.md",
+      "EN · 源码"
+    ],
+    "server": [
+      "pi-server README",
+      "https://github.com/earendil-works/pi/blob/9795d602306ef68a97585909e8e79f92a389057b/packages/server/README.md",
+      "EN · 源码"
+    ],
+    "evals": [
+      "pi-evals README",
+      "https://github.com/earendil-works/pi/blob/9795d602306ef68a97585909e8e79f92a389057b/packages/evals/README.md",
+      "EN · 源码"
+    ],
+    "telemetry": [
+      "pi-telemetry README",
+      "https://github.com/earendil-works/pi/blob/9795d602306ef68a97585909e8e79f92a389057b/packages/telemetry/README.md",
+      "EN · 源码"
+    ],
+    "tsBook": [
+      "TypeScript Deep Dive",
+      "https://github.com/basarat/typescript-book",
+      "EN · 开源教材"
+    ],
+    "fullstackTs": [
+      "Full Stack Open · TypeScript",
+      "https://fullstackopen.com/en/part9",
+      "EN · 课程"
+    ],
+    "tsHandbook": [
+      "TypeScript Handbook",
+      "https://www.typescriptlang.org/docs/handbook/intro.html",
+      "EN · 官方"
+    ],
+    "missingCn": [
+      "计算机教育中缺失的一课 2026",
+      "https://missing-semester-cn.github.io/2026/",
+      "中文 · 开源课程"
+    ],
+    "nodeStreams": [
+      "Node.js Streams API",
+      "https://nodejs.org/api/stream.html",
+      "EN · 官方"
+    ],
+    "mdnStreams": [
+      "MDN Streams API Concepts",
+      "https://developer.mozilla.org/en-US/docs/Web/API/Streams_API/Concepts",
+      "中/EN · 文档"
+    ],
+    "vercelAi": [
+      "Vercel AI SDK",
+      "https://github.com/vercel/ai",
+      "TS · 开源"
+    ],
+    "helloAgents": [
+      "Hello-Agents",
+      "https://github.com/datawhalechina/hello-agents",
+      "中文 · 开源教材"
+    ],
+    "aiAgentBook": [
+      "AI Agent Harness Book",
+      "https://github.com/bojieli/ai-agent-book",
+      "中/EN · 开源书"
+    ],
+    "aiAgentCh1": [
+      "《深入理解 AI Agent》第 1 章：基础与 Harness",
+      "https://github.com/bojieli/ai-agent-book/blob/main/book/chapter1.md",
+      "中文 · 开源书"
+    ],
+    "aiAgentCh2": [
+      "《深入理解 AI Agent》第 2 章：上下文工程",
+      "https://github.com/bojieli/ai-agent-book/blob/main/book/chapter2.md",
+      "中文 · 开源书"
+    ],
+    "aiAgentCh3": [
+      "《深入理解 AI Agent》第 3 章：用户记忆与知识库",
+      "https://github.com/bojieli/ai-agent-book/blob/main/book/chapter3.md",
+      "中文 · 开源书"
+    ],
+    "aiAgentCh4": [
+      "《深入理解 AI Agent》第 4 章：工具",
+      "https://github.com/bojieli/ai-agent-book/blob/main/book/chapter4.md",
+      "中文 · 开源书"
+    ],
+    "aiAgentCh6": [
+      "《深入理解 AI Agent》第 6 章：Agent 评估",
+      "https://github.com/bojieli/ai-agent-book/blob/main/book/chapter6.md",
+      "中文 · 开源书"
+    ],
+    "helloMemory": [
+      "Hello-Agents 第 8 章：记忆与检索",
+      "https://github.com/datawhalechina/hello-agents/blob/main/docs/chapter8/%E7%AC%AC%E5%85%AB%E7%AB%A0%20%E8%AE%B0%E5%BF%86%E4%B8%8E%E6%A3%80%E7%B4%A2.md",
+      "中文 · 开源教材"
+    ],
+    "agentEffective": [
+      "Building Effective AI Agents",
+      "https://www.anthropic.com/engineering/building-effective-agents",
+      "EN · 工程指南"
+    ],
+    "openaiAgentGuide": [
+      "A Practical Guide to Building Agents",
+      "https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf",
+      "EN · 指南 PDF"
+    ],
+    "reactPaper": [
+      "ReAct 论文",
+      "https://arxiv.org/abs/2210.03629",
+      "EN · 论文"
+    ],
+    "twelveFactor": [
+      "12-Factor Agents",
+      "https://github.com/humanlayer/12-factor-agents",
+      "EN · 开源指南"
+    ],
+    "contextAnthropic": [
+      "Effective Context Engineering for AI Agents",
+      "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
+      "EN · 工程指南"
+    ],
+    "contextManus": [
+      "Manus：Context Engineering Lessons",
+      "https://manus.im/blog/Context-Engineering-for-AI-Agents-Lessons-from-Building-Manus",
+      "EN · 工程复盘"
+    ],
+    "contextLangChain": [
+      "LangChain：Context Engineering",
+      "https://www.langchain.com/blog/context-engineering-for-agents",
+      "EN · 概念指南"
+    ],
+    "lostMiddle": [
+      "Lost in the Middle",
+      "https://arxiv.org/abs/2307.03172",
+      "EN · 论文"
+    ],
+    "longHarness": [
+      "Effective Harnesses for Long-Running Agents",
+      "https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents",
+      "EN · 工程指南"
+    ],
+    "typebox": [
+      "TypeBox（仅用于读懂 Pi）",
+      "https://github.com/sinclairzx81/typebox",
+      "TS · Pi 对照"
+    ],
+    "zod": [
+      "Zod GitHub",
+      "https://github.com/colinhacks/zod",
+      "TS · 开源"
+    ],
+    "zodDocs": [
+      "Zod documentation",
+      "https://zod.dev/",
+      "EN · 官方文档"
+    ],
+    "zodJsonSchema": [
+      "Zod · JSON Schema conversion",
+      "https://zod.dev/json-schema",
+      "EN · 官方文档"
+    ],
+    "jsonSchema": [
+      "Understanding JSON Schema",
+      "https://json-schema.org/understanding-json-schema",
+      "EN · 开源书"
+    ],
+    "toolformer": [
+      "Toolformer 论文",
+      "https://arxiv.org/abs/2302.04761",
+      "EN · 论文"
+    ],
+    "toolsAnthropic": [
+      "Writing Effective Tools for AI Agents",
+      "https://www.anthropic.com/engineering/writing-tools-for-agents",
+      "EN · 工程指南"
+    ],
+    "bfcl": [
+      "Berkeley Function Calling Leaderboard",
+      "https://github.com/ShishirPatil/gorilla/tree/main/berkeley-function-call-leaderboard",
+      "EN · 工具评测"
+    ],
+    "asyncBook": [
+      "JavaScript.info · Promises/async",
+      "https://javascript.info/async",
+      "中/EN · 教程"
+    ],
+    "jsonLines": [
+      "JSON Lines specification",
+      "https://jsonlines.org/",
+      "EN · 规范"
+    ],
+    "eventSourcing": [
+      "Martin Fowler · Event Sourcing",
+      "https://www.martinfowler.com/eaaDev/EventSourcing.html",
+      "EN · 架构文章"
+    ],
+    "proGit": [
+      "Pro Git",
+      "https://git-scm.com/book/zh/v2",
+      "中文 · 开源书"
+    ],
+    "letta": [
+      "Letta / MemGPT",
+      "https://github.com/letta-ai/letta",
+      "Python/TS · 开源"
+    ],
+    "langmem": [
+      "LangMem",
+      "https://github.com/langchain-ai/langmem",
+      "Python/TS · 开源"
+    ],
+    "graphiti": [
+      "Graphiti temporal graph",
+      "https://github.com/getzep/graphiti",
+      "Python · 开源"
+    ],
+    "coala": [
+      "CoALA：Cognitive Architectures for Language Agents",
+      "https://arxiv.org/abs/2309.02427",
+      "EN · 论文"
+    ],
+    "langchainMemory": [
+      "LangChain JS · Memory Overview",
+      "https://docs.langchain.com/oss/javascript/concepts/memory",
+      "EN · 概念文档"
+    ],
+    "langgraphMemory": [
+      "LangGraph JS · Add and Manage Memory",
+      "https://docs.langchain.com/oss/javascript/langgraph/add-memory",
+      "EN · 实现指南"
+    ],
+    "memgptPaper": [
+      "MemGPT 论文",
+      "https://arxiv.org/abs/2310.08560",
+      "EN · 论文"
+    ],
+    "zepPaper": [
+      "Zep temporal memory 论文",
+      "https://arxiv.org/abs/2501.13956",
+      "EN · 论文"
+    ],
+    "thinkTool": [
+      "The “think” Tool",
+      "https://www.anthropic.com/engineering/claude-think-tool",
+      "EN · 工程实验"
+    ],
+    "reflexion": [
+      "Reflexion：Language Agents with Verbal Reinforcement Learning",
+      "https://arxiv.org/abs/2303.11366",
+      "EN · 论文"
+    ],
+    "owaspAgent": [
+      "OWASP Agentic AI Threats & Mitigations",
+      "https://genai.owasp.org/resource/agentic-ai-threats-and-mitigations/",
+      "EN · 安全"
+    ],
+    "claudeSandbox": [
+      "Claude Code Sandboxing",
+      "https://www.anthropic.com/engineering/claude-code-sandboxing",
+      "EN · 安全工程"
+    ],
+    "trustworthyAgents": [
+      "Trustworthy Agents in Practice",
+      "https://www.anthropic.com/research/trustworthy-agents",
+      "EN · 安全研究"
+    ],
+    "gvisor": [
+      "gVisor sandbox",
+      "https://github.com/google/gvisor",
+      "Go · 开源"
+    ],
+    "bubbleTea": [
+      "Bubble Tea / Elm-style TUI",
+      "https://github.com/charmbracelet/bubbletea",
+      "Go · 开源"
+    ],
+    "elmArch": [
+      "The Elm Architecture",
+      "https://guide.elm-lang.org/architecture/",
+      "EN · 教程"
+    ],
+    "agentSkills": [
+      "Agent Skills specification",
+      "https://github.com/agentskills/agentskills/blob/main/docs/specification.mdx",
+      "EN · 开放规范"
+    ],
+    "pluggy": [
+      "pluggy plugin system",
+      "https://github.com/pytest-dev/pluggy",
+      "Python · 开源"
+    ],
+    "mcp": [
+      "MCP Architecture",
+      "https://modelcontextprotocol.io/docs/learn/architecture",
+      "EN · 开放规范"
+    ],
+    "jsonRpc": [
+      "JSON-RPC 2.0 specification",
+      "https://www.jsonrpc.org/specification",
+      "EN · 规范"
+    ],
+    "cbor": [
+      "RFC 8949 · CBOR",
+      "https://www.rfc-editor.org/rfc/rfc8949.html",
+      "EN · RFC"
+    ],
+    "otel": [
+      "OpenTelemetry JavaScript",
+      "https://opentelemetry.io/docs/languages/js/",
+      "EN · 开源标准"
+    ],
+    "otelAgent": [
+      "OpenTelemetry · AI Agent Observability",
+      "https://opentelemetry.io/blog/2025/ai-agent-observability/",
+      "EN · 可观测性"
+    ],
+    "evalAnthropic": [
+      "Demystifying Evals for AI Agents",
+      "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
+      "EN · 评测指南"
+    ],
+    "tauBench": [
+      "τ³-bench",
+      "https://github.com/sierra-research/tau2-bench",
+      "EN · Agent 评测"
+    ],
+    "promptfoo": [
+      "Promptfoo eval & red team",
+      "https://github.com/promptfoo/promptfoo",
+      "TS · 开源"
+    ],
+    "sweBench": [
+      "SWE-bench",
+      "https://github.com/SWE-bench/SWE-bench",
+      "Python · 开源"
+    ],
+    "claudeCode": [
+      "Claude Code 官方仓库（非完整核心源码）",
+      "https://github.com/anthropics/claude-code",
+      "EN · 商业条款"
+    ],
+    "claudeAgentSdk": [
+      "Claude Agent SDK · TypeScript",
+      "https://github.com/anthropics/claude-agent-sdk-typescript",
+      "TS · 集成边界"
+    ],
+    "vitest": [
+      "Vitest",
+      "https://github.com/vitest-dev/vitest",
+      "TS · 开源"
+    ],
+    "fastCheck": [
+      "fast-check property testing",
+      "https://github.com/dubzzz/fast-check",
+      "TS · 开源"
+    ],
+    "nodeTest": [
+      "Node.js Test Runner",
+      "https://nodejs.org/api/test.html",
+      "TS/JS · 官方"
+    ]
+  },
+  "concepts": [
+    {
+      "id": "agent-loop",
+      "title": "Agent Loop 与 Harness",
+      "pi": "agent-loop.ts · agent.ts · AgentState · events",
+      "summary": "模型只负责提出下一步；Harness 负责循环、状态、工具、反馈、预算、停止与恢复。先把“模型能力”和“系统能力”拆开。",
+      "learn": [
+        "一次 turn 与完整 task trajectory 有什么区别",
+        "tool result 为什么必须成为下一轮 observation",
+        "workflow、agent、model adapter 与 harness 的边界"
+      ],
+      "experiment": "用 fake model 固定返回“工具调用 → 工具调用 → 最终回答”，写一个不依赖真实模型的最小循环，并断言完整事件顺序。",
+      "mastery": "我能画出 Agent Loop，并指出每一层由模型还是 Harness 负责。",
+      "resources": [
+        [
+          "起点",
+          "aiAgentCh1",
+          "先用中文建立 Agent = LLM + Context + Tools 与 Harness 的整体模型。"
+        ],
+        [
+          "主线",
+          "agentEffective",
+          "区分 workflow 与 agent，并理解最小可组合模式。"
+        ],
+        [
+          "论文",
+          "reactPaper",
+          "理解 reasoning / action / observation 如何交错。"
+        ],
+        [
+          "对照",
+          "agentLoop",
+          "把论文里的循环逐段映射到 Pi 的真实事件与停止逻辑。"
+        ],
+        [
+          "原则",
+          "twelveFactor",
+          "从软件工程角度看可控、可恢复的 Agent Harness。"
+        ],
+        [
+          "总览",
+          "openaiAgentGuide",
+          "补充工具、护栏、编排与上线的产品化视角。"
+        ]
+      ]
+    },
+    {
+      "id": "context",
+      "title": "Context Engineering",
+      "pi": "transformContext · transform-messages.ts · resource-loader.ts",
+      "summary": "上下文不是聊天记录的同义词，而是模型在当前决策点能看到的全部 token：指令、工具定义、状态、检索结果、历史与摘要。",
+      "learn": [
+        "prompt engineering 与 context engineering 的区别",
+        "write / select / compress / isolate 四类操作",
+        "token 预算、稳定前缀、KV cache 与信息位置如何影响行为"
+      ],
+      "experiment": "给同一任务设置 8k token 上限，记录每类上下文的预算与淘汰顺序；交换关键信息位置，比较工具选择是否变化。",
+      "mastery": "我能为一次模型调用列出完整上下文来源，并解释每一块为什么值得占 token。",
+      "resources": [
+        [
+          "中文",
+          "aiAgentCh2",
+          "系统讲解 KV cache、Skills、压缩与上下文预算。"
+        ],
+        [
+          "主线",
+          "contextAnthropic",
+          "把上下文视为有限资源，理解长期 Agent 的 curating 策略。"
+        ],
+        [
+          "方法",
+          "contextLangChain",
+          "用 write、select、compress、isolate 组织设计空间。"
+        ],
+        [
+          "实战",
+          "contextManus",
+          "从稳定前缀、文件系统外部记忆与错误保留理解生产取舍。"
+        ],
+        [
+          "证据",
+          "lostMiddle",
+          "理解“窗口放得下”并不等于模型能可靠使用。"
+        ],
+        [
+          "对照",
+          "resourceLoader",
+          "观察 Pi 如何把项目资源按规则装配进当前上下文。"
+        ]
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "Tools 与 Action Runtime",
+      "pi": "AgentTool · Zod schema · execute · tool result",
+      "summary": "工具是受约束的动作协议，不只是一个函数。Schema、描述、选择、验证、执行、取消、错误与权限共同决定可靠性。",
+      "learn": [
+        "工具描述如何改变模型选择与参数质量",
+        "静态类型、运行时验证与 JSON Schema 分别解决什么",
+        "并发、幂等、超时、取消和错误结果如何进入循环"
+      ],
+      "experiment": "用 Zod 实现 read / search / calculator 三个工具；注入未知字段、超时、重复调用与恶意参数，验证每次失败都形成结构化 tool result。",
+      "mastery": "我能从 schema、执行语义和权限三个层面评审一个工具，而不是只看函数能否运行。",
+      "resources": [
+        [
+          "中文",
+          "aiAgentCh4",
+          "从感知、执行、协作工具到 MCP 和异步 Agent 的系统讲解。"
+        ],
+        [
+          "主线",
+          "toolsAnthropic",
+          "学习命名、描述、返回值和 eval 如何共同改善工具使用。"
+        ],
+        [
+          "论文",
+          "toolformer",
+          "理解模型为何以及如何学习决定何时调用工具。"
+        ],
+        [
+          "协议",
+          "mcp",
+          "理解 tools、resources、prompts 的标准化连接边界。"
+        ],
+        [
+          "评测",
+          "bfcl",
+          "查看工具调用的可执行评测、并行调用与多轮分类。"
+        ],
+        [
+          "对照",
+          "harnessTools",
+          "阅读 Pi coding tools 的输入、执行与结果形态。"
+        ],
+        [
+          "实现",
+          "zodJsonSchema",
+          "用 Zod 同时得到运行时验证、TS 类型与 provider schema。"
+        ]
+      ]
+    },
+    {
+      "id": "state-session",
+      "title": "State、Events 与 Session",
+      "pi": "AgentState · event stream · JSONL tree · replay",
+      "summary": "当前 snapshot 是派生状态，事件日志才解释系统如何到达这里。Session 需要把消息、分支、工具结果和控制事件持久化并可回放。",
+      "learn": [
+        "message、event、command 与 snapshot 的区别",
+        "append-only 日志怎样支持回放、分支与审计",
+        "流式 UI 为什么只能订阅权威状态，不能反向伪造 Agent 状态"
+      ],
+      "experiment": "把一条固定 trajectory 写入 JSONL，再从空状态 replay 两次；两次 snapshot 必须深度相等，并能从任意节点创建分支。",
+      "mastery": "我能仅凭事件日志重建会话，并解释哪些字段是事实、哪些只是 UI 派生值。",
+      "resources": [
+        [
+          "主线",
+          "sessionFormat",
+          "先掌握 Pi 会话条目、父子关系与 JSONL 事实源。"
+        ],
+        [
+          "操作",
+          "sessionsDoc",
+          "理解 resume、branch、tree 与会话生命周期。"
+        ],
+        [
+          "架构",
+          "eventSourcing",
+          "用 event sourcing 心智模型理解 replay 与 snapshot。"
+        ],
+        [
+          "规范",
+          "jsonLines",
+          "掌握 append-only 持久化所依赖的最小文本格式。"
+        ],
+        [
+          "流式",
+          "nodeStreams",
+          "理解背压、取消与消费事件流的 Node.js 原语。"
+        ],
+        [
+          "对照",
+          "agentSession",
+          "观察 coding-agent 如何把 Agent、Session 与 UI 资源组合。"
+        ]
+      ]
+    },
+    {
+      "id": "memory",
+      "title": "Memory 与 Retrieval",
+      "pi": "session history · memory.ts · branch summary",
+      "summary": "短期上下文、会话持久化和长期记忆是三件事。记忆系统还必须决定记什么、何时写、怎样检索、何时遗忘以及如何处理冲突。",
+      "learn": [
+        "working / episodic / semantic / procedural memory 的工程含义",
+        "hot-path 写入与后台整理的取舍",
+        "检索命中、错误记忆、过时信息和跨用户隔离如何评测"
+      ],
+      "experiment": "为 20 条事实标注记忆类型、scope、TTL 与 provenance；实现写入/检索后，加入冲突事实并验证不会静默覆盖。",
+      "mastery": "我能区分 context、session 和 long-term memory，并为每类信息选择正确的持久化与召回策略。",
+      "resources": [
+        [
+          "中文",
+          "aiAgentCh3",
+          "从用户记忆、RAG、结构化索引到知识图谱建立全景。"
+        ],
+        [
+          "中文",
+          "helloMemory",
+          "带代码理解 working、episodic、semantic memory 与检索。"
+        ],
+        [
+          "框架",
+          "coala",
+          "用认知架构统一记忆模块、动作空间与决策过程。"
+        ],
+        [
+          "论文",
+          "memgptPaper",
+          "理解分层内存与虚拟上下文的经典设计。"
+        ],
+        [
+          "概念",
+          "langchainMemory",
+          "明确 thread-scoped 短期记忆与跨线程长期记忆。"
+        ],
+        [
+          "实现",
+          "langgraphMemory",
+          "查看 TypeScript 中 trim、summary、checkpoint 与 store 的具体接口。"
+        ],
+        [
+          "对照",
+          "harnessMemory",
+          "检查 Pi 的 memory/session 边界，避免把所有持久化都叫 memory。"
+        ]
+      ]
+    },
+    {
+      "id": "compaction",
+      "title": "Compaction 与长任务",
+      "pi": "compaction · branch summary · transformContext",
+      "summary": "压缩不是简单 summarize。可靠压缩要保留目标、约束、未完成工作、关键证据和恢复指针，并能衡量压缩后行为是否退化。",
+      "learn": [
+        "何时 trim、summarize、externalize 或重新检索",
+        "摘要怎样保留 provenance 与可恢复性",
+        "跨 context window 交接如何维持任务连续性"
+      ],
+      "experiment": "用同一长会话生成两种摘要，分别让 Agent 继续完成任务；比较约束保持率、工具重做次数、token 与最终测试结果。",
+      "mastery": "我能设计一份可恢复的 compaction schema，并用行为 eval 证明它没有丢掉关键约束。",
+      "resources": [
+        [
+          "主线",
+          "compactionDoc",
+          "先读 Pi 的自动压缩、分支摘要与扩展点。"
+        ],
+        [
+          "源码",
+          "harnessCompaction",
+          "追踪压缩触发、摘要生成与上下文替换。"
+        ],
+        [
+          "长任务",
+          "longHarness",
+          "理解跨窗口增量进展和交接 artifact。"
+        ],
+        [
+          "证据",
+          "lostMiddle",
+          "用长上下文位置偏差解释为什么不能只扩大窗口。"
+        ],
+        [
+          "方法",
+          "contextAnthropic",
+          "把 compaction 放回完整 context engineering 策略。"
+        ],
+        [
+          "实现",
+          "langgraphMemory",
+          "对照 trim、summarize 和 checkpoint 的工程实现。"
+        ]
+      ]
+    },
+    {
+      "id": "control",
+      "title": "Planning、Steering 与终止",
+      "pi": "steering queue · abort · stopReason · max turns",
+      "summary": "自主并不等于无限循环。目标、计划、预算、人类 steering、取消和明确终止条件组成 Agent 的控制面。",
+      "learn": [
+        "计划是上下文 artifact 还是独立控制器",
+        "何时串行、并行、反思或请求人类确认",
+        "完成、失败、取消、预算耗尽与需要输入如何区分"
+      ],
+      "experiment": "为 fake agent 增加 maxTurns、tokenBudget、AbortSignal 和 steering queue；覆盖每一种 stopReason，并保证取消后不再产生副作用。",
+      "mastery": "我能为 Agent 写出封闭的终止状态机，并解释人类输入在何时进入循环。",
+      "resources": [
+        [
+          "模式",
+          "agentEffective",
+          "比较 chaining、routing、parallelization、orchestrator-worker 与 evaluator-optimizer。"
+        ],
+        [
+          "论文",
+          "reactPaper",
+          "理解局部行动如何持续吸收环境反馈。"
+        ],
+        [
+          "反思",
+          "reflexion",
+          "理解语言反馈如何进入后续决策和记忆。"
+        ],
+        [
+          "实验",
+          "thinkTool",
+          "观察在长工具链和强策略约束下增加思考步骤的作用与边界。"
+        ],
+        [
+          "原则",
+          "twelveFactor",
+          "把暂停、恢复、控制流和 human-in-the-loop 当作软件结构。"
+        ],
+        [
+          "对照",
+          "agentClass",
+          "追踪 Pi 的状态、队列、abort 与 turn 生命周期。"
+        ]
+      ]
+    },
+    {
+      "id": "safety",
+      "title": "Permissions、Policy 与 Sandbox",
+      "pi": "project trust · tool policy · process boundary",
+      "summary": "审批提示不是安全边界。可靠系统要在模型之外执行最小权限、文件系统与网络隔离、凭据分域、审计以及高风险动作确认。",
+      "learn": [
+        "prompt injection、tool poisoning 与 secret exfiltration 的路径",
+        "allow / deny / ask policy 与 OS sandbox 分别阻止什么",
+        "为什么文件系统隔离和网络隔离必须一起设计"
+      ],
+      "experiment": "让不可信文件诱导 Agent 读取 SSH key 并上传；测试 policy、路径约束和网络白名单分别拦截哪一步，并保存审计 trace。",
+      "mastery": "我能画出一条攻击链，并指出每个缓解措施由模型、Harness、OS 还是网络层执行。",
+      "resources": [
+        [
+          "威胁",
+          "owaspAgent",
+          "从目标劫持、工具滥用、记忆污染等类别建立威胁模型。"
+        ],
+        [
+          "实战",
+          "claudeSandbox",
+          "理解文件系统与网络双重隔离为何减少审批疲劳。"
+        ],
+        [
+          "框架",
+          "trustworthyAgents",
+          "从环境、权限与人类监督理解可信 Agent。"
+        ],
+        [
+          "对照",
+          "trust",
+          "检查 Pi 对项目内容的信任边界。"
+        ],
+        [
+          "隔离",
+          "gvisor",
+          "了解真正进程隔离在模型之外如何执行。"
+        ],
+        [
+          "红队",
+          "promptfoo",
+          "把 prompt injection 与越权案例变成可重复回归测试。"
+        ]
+      ]
+    },
+    {
+      "id": "eval",
+      "title": "Eval、Trace 与 Observability",
+      "pi": "pi-evals · telemetry · event transcript",
+      "summary": "Agent 的最终文本可能说“完成了”，真正 outcome 却失败。评测必须同时观察 trajectory、工具调用、环境终态、成本、时延与多次试验方差。",
+      "learn": [
+        "task、trial、grader、transcript、outcome 与 harness 的区别",
+        "确定性断言、环境检查、LLM rubric 和人工校准如何组合",
+        "如何把线上失败压缩成最小离线回归案例"
+      ],
+      "experiment": "建立 10 个固定 coding tasks，每题至少运行 3 次；分别记录工具参数正确性、测试终态、turn/token/latency 和失败类型。",
+      "mastery": "我能为一个 Agent 能力写出可重复任务、环境终态 grader 与 trajectory 诊断，而不是只评价最终回答。",
+      "resources": [
+        [
+          "中文",
+          "aiAgentCh6",
+          "从评估环境、指标、统计显著性建立完整方法。"
+        ],
+        [
+          "主线",
+          "evalAnthropic",
+          "掌握 task、trial、grader、transcript、outcome 和两类 harness。"
+        ],
+        [
+          "工具",
+          "promptfoo",
+          "在 TypeScript 路线里落地行为 eval 与红队回归。"
+        ],
+        [
+          "工具评测",
+          "tauBench",
+          "观察多轮工具、用户模拟、策略约束和环境终态评测。"
+        ],
+        [
+          "编码评测",
+          "sweBench",
+          "理解 patch、容器和测试判定，而非文本相似度。"
+        ],
+        [
+          "可观测",
+          "otelAgent",
+          "学习为 model、tool、conversation 和 agent 建立标准 trace。"
+        ],
+        [
+          "对照",
+          "evals",
+          "阅读 Pi 的评测入口与实验组织方式。"
+        ]
+      ]
+    },
+    {
+      "id": "boundaries",
+      "title": "Extensions、Skills 与协议边界",
+      "pi": "extensions · skills · SDK · JSONL RPC · client/server",
+      "summary": "核心稳定后，再通过扩展、技能和协议增加能力。关键是让外部代码消费明确事件和 schema，而不是直接修改 Agent 内部状态。",
+      "learn": [
+        "extension、skill、tool、MCP server 与 client 的职责差异",
+        "progressive disclosure 怎样控制扩展的上下文成本",
+        "进程内 SDK、JSONL RPC 与二进制协议应如何选"
+      ],
+      "experiment": "写一个只订阅事件的 Node.js RPC client，再写一个按需加载的 Skill；两者都不能绕过 tool policy 或直接改权威 snapshot。",
+      "mastery": "我能为一个新能力选择 tool、skill、extension 或独立 client，并说明它与核心状态的边界。",
+      "resources": [
+        [
+          "扩展",
+          "extensionsDoc",
+          "理解 Pi 的 hooks、commands、custom tools 与生命周期。"
+        ],
+        [
+          "技能",
+          "skillsDoc",
+          "理解文件式技能与 progressive disclosure。"
+        ],
+        [
+          "规范",
+          "agentSkills",
+          "阅读开放的 Agent Skills 格式与发现规则。"
+        ],
+        [
+          "连接",
+          "mcp",
+          "区分能力/数据连接与 Agent 自身控制循环。"
+        ],
+        [
+          "协议",
+          "rpcDoc",
+          "观察 Pi 如何用 JSONL 把同一核心暴露给外部进程。"
+        ],
+        [
+          "对照",
+          "claudeAgentSdk",
+          "只学习 Claude Code 的公开集成表面，不把它误当核心源码。"
+        ],
+        [
+          "边界",
+          "jsonRpc",
+          "补足请求、响应、通知与错误对象的通用协议语义。"
+        ]
+      ]
+    }
+  ],
+  "roadmap": [
+    {
+      "id": "foundation",
+      "title": "定位、环境与源码地图",
+      "weeks": "1 周",
+      "hours": "8–12h",
+      "output": "能运行 Pi，并画出 package 依赖图",
+      "why": "先确认“你在复刻什么”。Pi 是分层 monorepo，不是单个 while-loop 文件。",
+      "resources": [
+        "pi",
+        "piRootPkg",
+        "agentEffective",
+        "aiAgentCh1",
+        "openaiAgentGuide",
+        "missingCn",
+        "tsBook",
+        "fullstackTs",
+        "zod",
+        "zodDocs"
+      ],
+      "tasks": [
+        [
+          "建立学习仓库与实验日志",
+          "创建 packages/core、packages/runtime、packages/cli、packages/evals 目录和 ADR 模板；每个阶段保留 design-notes.md。",
+          "仓库能安装、测试；README 写明目标、非目标与安全声明。",
+          [
+            "piRootPkg",
+            "missingCn"
+          ]
+        ],
+        [
+          "运行并观察 Pi",
+          "从源码安装 Pi，分别体验 interactive、print、JSON/RPC 模式，保存一段事件输出。",
+          "能解释四种模式共享了哪一层，以及 UI 与核心如何分离。",
+          [
+            "pi",
+            "codingReadme"
+          ]
+        ],
+        [
+          "绘制 package 依赖图",
+          "标出 ai → agent → coding-agent/tui，以及 protocol ↔ client/server 的边界。",
+          "每条依赖都有理由；没有把 TUI 当作 Agent 核心。",
+          [
+            "pi",
+            "agentReadme"
+          ]
+        ],
+        [
+          "用 Zod 建立 TypeScript 类型工具箱",
+          "用 z.object()、z.literal()、z.discriminatedUnion() 定义 Message/Event；用 z.infer 推导静态类型，用 safeParse() 收窄 unknown，再以 assertNever() 做穷尽检查。",
+          "Message/Event 只有一份 Zod schema 作为事实源；非法 unknown 输入返回结构化错误；故意删除一个 switch 分支时，TypeScript 编译必须失败。",
+          [
+            "zod",
+            "zodDocs",
+            "tsHandbook"
+          ]
+        ],
+        [
+          "补齐 Node / Shell 基础",
+          "练习 stdin/stdout、signals、AbortController、child_process、文件权限和管道。",
+          "写一个可取消子进程包装器，正确区分 stdout、stderr、exit 与 signal。",
+          [
+            "missingCn",
+            "nodeStreams"
+          ]
+        ],
+        [
+          "写第一份架构决策 ADR",
+          "解释为何所有核心、工具、协议、界面与评测都统一使用 TypeScript + Node.js。",
+          "ADR 包含单语言路线的收益、局限、备选方案与退出条件，而非只有结论。",
+          [
+            "aiAgentBook",
+            "twelveFactor"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "model-layer",
+      "title": "统一模型层与消息类型",
+      "weeks": "1 周",
+      "hours": "10–14h",
+      "output": "最小 Model Adapter + provider-neutral messages",
+      "why": "模型供应商会变，Agent 核心不应知道每家 API 的消息细节。",
+      "resources": [
+        "aiReadme",
+        "aiTypes",
+        "aiModels",
+        "vercelAi",
+        "tsHandbook",
+        "zod"
+      ],
+      "tasks": [
+        [
+          "读懂 Pi 的类型边界",
+          "整理 Model、Context、Message、ToolCall、Usage、StopReason 的关系。",
+          "写出一页类型图，并指出 streaming partial 与 terminal message 的区别。",
+          [
+            "aiTypes",
+            "aiReadme"
+          ]
+        ],
+        [
+          "用 Zod 定义 provider-neutral schema",
+          "只保留核心需要的 user/assistant/toolResult 与内容块，并通过 z.infer 生成 TypeScript 类型。",
+          "Zod schema 能验证 text、thinking、toolCall、usage、错误和取消；静态类型不再手工重复声明。",
+          [
+            "aiTypes",
+            "zod"
+          ]
+        ],
+        [
+          "实现模型注册表",
+          "按 provider/modelId 查找能力、上下文窗口、输入类型和成本元数据。",
+          "未知模型显式失败；注册与调用解耦。",
+          [
+            "aiModels",
+            "vercelAi"
+          ]
+        ],
+        [
+          "实现一个 FakeModel",
+          "用脚本化响应模拟文本、工具调用、错误与截断。",
+          "后续所有核心测试不依赖真实 API key 或网络。",
+          [
+            "agentTypes",
+            "vitest"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "streaming",
+      "title": "流式事件与 Provider Adapter",
+      "weeks": "1–2 周",
+      "hours": "12–16h",
+      "output": "可测试的统一事件流",
+      "why": "Agent 体验和正确性都建立在事件顺序上；“等完整 JSON 返回”会掩盖取消、半包与工具增量。",
+      "resources": [
+        "aiStream",
+        "aiTransform",
+        "aiProviders",
+        "nodeStreams",
+        "mdnStreams"
+      ],
+      "tasks": [
+        [
+          "定义事件状态机",
+          "设计 start/delta/done/error，明确消息何时从 pending 变为 terminal。",
+          "非法顺序被拒绝；每条流只有一个终态。",
+          [
+            "aiStream",
+            "aiTypes"
+          ]
+        ],
+        [
+          "实现 AsyncIterable stream",
+          "支持订阅、聚合最终结果、错误传播与 AbortSignal。",
+          "慢消费者、提前取消、provider 错误都有测试。",
+          [
+            "aiStream",
+            "nodeStreams"
+          ]
+        ],
+        [
+          "实现首个真实 Provider Adapter",
+          "选择一个供应商，把请求与事件双向转换为统一类型。",
+          "核心层不出现供应商专属字段；tool call 增量可重组。",
+          [
+            "aiProviders",
+            "vercelAi"
+          ]
+        ],
+        [
+          "实现重试与退避边界",
+          "只对可重试错误退避，遵守 Retry-After，并让取消立即生效。",
+          "用 fake clock 验证次数、抖动上限与非幂等保护。",
+          [
+            "aiRetry",
+            "vitest"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "agent-loop",
+      "title": "最小 Agent Loop 与状态机",
+      "weeks": "1–2 周",
+      "hours": "14–18h",
+      "output": "无 UI 的可运行 Agent Core",
+      "why": "这是项目的发动机：输入、模型决策、工具观察与下一轮必须是可推理、可停止的状态迁移。",
+      "resources": [
+        "agentLoop",
+        "agentClass",
+        "agentTypes",
+        "helloAgents",
+        "aiAgentCh1",
+        "agentEffective",
+        "reactPaper",
+        "thinkTool",
+        "twelveFactor"
+      ],
+      "tasks": [
+        [
+          "手写单轮循环",
+          "输入 Context，流式调用模型，把最终 assistant message 追加到状态。",
+          "纯文本场景能稳定结束，事件顺序与状态一致。",
+          [
+            "agentLoop",
+            "reactPaper"
+          ]
+        ],
+        [
+          "扩展为多轮 tool loop",
+          "检测 toolCall，执行后追加 toolResult，再请求模型。",
+          "一个 ReAct 数学/搜索案例能完成 thought-action-observation 闭环。",
+          [
+            "agentLoop",
+            "helloAgents"
+          ]
+        ],
+        [
+          "实现 AgentState 与事件总线",
+          "暴露 agent_start、turn、message、tool、agent_end 等语义事件。",
+          "消费者只靠事件就能重建可见执行时间线。",
+          [
+            "agentTypes",
+            "agentReadme"
+          ]
+        ],
+        [
+          "加入终止与预算",
+          "支持 maxTurns、timeout、token/cost budget、shouldStopAfterTurn。",
+          "死循环 FakeModel 会被确定地终止，并给出机器可读原因。",
+          [
+            "agentLoop",
+            "twelveFactor"
+          ]
+        ],
+        [
+          "加入 steering / follow-up 队列",
+          "区分立即改变当前方向与当前任务结束后的追加请求。",
+          "并发入队不丢消息，且行为由测试固定。",
+          [
+            "agentClass",
+            "agentReadme"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "工具系统、Schema 与执行语义",
+      "weeks": "1–2 周",
+      "hours": "14–18h",
+      "output": "安全、可取消、可组合的 Tool Runtime",
+      "why": "工具调用把概率输出变成真实副作用；工程质量集中体现在验证、并发、错误与策略边界。",
+      "resources": [
+        "agentTypes",
+        "harnessTools",
+        "aiAgentCh4",
+        "toolsAnthropic",
+        "zod",
+        "zodJsonSchema",
+        "typebox",
+        "jsonSchema",
+        "toolformer",
+        "bfcl"
+      ],
+      "tasks": [
+        [
+          "用 Zod 定义 Tool contract",
+          "每个工具提供 name、description、Zod input schema、execute、result content 与 metadata；从 Zod schema 生成模型需要的 JSON Schema。",
+          "同一份 Zod schema 同时完成 z.infer、unknown 输入 safeParse 和 JSON Schema 输出，不维护重复类型。",
+          [
+            "agentTypes",
+            "zod",
+            "zodJsonSchema"
+          ]
+        ],
+        [
+          "实现注册、发现与参数校验",
+          "处理未知工具、重复名称、额外字段、缺失字段和类型错误。",
+          "所有失败转成模型可观察但不泄露敏感堆栈的 toolResult。",
+          [
+            "jsonSchema",
+            "agentLoop"
+          ]
+        ],
+        [
+          "明确并发语义",
+          "无依赖调用并发执行；需要顺序的工具提供显式策略。",
+          "测试证明结果仍按 toolCall 关联，不依赖完成顺序。",
+          [
+            "agentReadme",
+            "asyncBook"
+          ]
+        ],
+        [
+          "实现进度、取消与超时",
+          "工具通过 update 回传进度，并响应 AbortSignal。",
+          "取消后没有晚到结果污染新一轮；超时原因可追踪。",
+          [
+            "harnessTools",
+            "nodeStreams"
+          ]
+        ],
+        [
+          "做三个教学工具",
+          "calculator、in-memory search、需要确认的 write-note。",
+          "三者分别覆盖纯函数、读取与副作用，形成后续回归夹具。",
+          [
+            "toolformer",
+            "helloAgents"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "context",
+      "title": "Context Engineering 与资源加载",
+      "weeks": "1 周",
+      "hours": "10–14h",
+      "output": "可解释的上下文组装管线",
+      "why": "模型看到什么，往往比“模型有多强”更决定结果。上下文必须有来源、优先级、预算与转换边界。",
+      "resources": [
+        "aiTransform",
+        "resourceLoader",
+        "harness",
+        "aiAgentCh2",
+        "contextAnthropic",
+        "contextManus",
+        "contextLangChain",
+        "lostMiddle",
+        "twelveFactor"
+      ],
+      "tasks": [
+        [
+          "区分 AgentMessage 与 LLM Message",
+          "允许 Harness 保存自定义消息，再在模型调用前转换。",
+          "自定义 UI/summary 消息不会泄漏为 provider 不认识的格式。",
+          [
+            "agentReadme",
+            "aiTransform"
+          ]
+        ],
+        [
+          "实现 system prompt builder",
+          "组合安全规则、cwd、工具说明、项目指令和当前任务。",
+          "每段有稳定顺序、来源标签与 token 预算。",
+          [
+            "resourceLoader",
+            "aiAgentBook"
+          ]
+        ],
+        [
+          "加载 AGENTS.md 与技能",
+          "从工作目录向上发现项目说明，并按需加载 skill 内容。",
+          "冲突优先级可解释；缺失/超长/恶意文件有处理策略。",
+          [
+            "resourceLoader",
+            "skillsDoc"
+          ]
+        ],
+        [
+          "实现 context inspector",
+          "输出最终发送给模型的消息、来源和裁剪原因，不暴露 secret。",
+          "能回答“模型为什么没看到这个文件”，并用于回归测试。",
+          [
+            "harness",
+            "twelveFactor"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "sessions",
+      "title": "JSONL Session、树与回放",
+      "weeks": "1–2 周",
+      "hours": "12–18h",
+      "output": "可分支、可回放的持久会话",
+      "why": "聊天数组无法表达分支、模型切换、压缩和扩展事件。Pi 用 append-only JSONL 保存事实，再派生活动状态。",
+      "resources": [
+        "sessionFormat",
+        "sessionsDoc",
+        "harnessSession",
+        "eventSourcing",
+        "jsonLines",
+        "proGit"
+      ],
+      "tasks": [
+        [
+          "定义 append-only entry schema",
+          "每行包含 type、id、parentId、timestamp 与特定 payload。",
+          "逐行解析，坏记录包含行号；写入后崩溃不会破坏此前历史。",
+          [
+            "sessionFormat",
+            "jsonLines"
+          ]
+        ],
+        [
+          "实现树与活动叶节点",
+          "由 id/parentId 重建分支，选择叶节点派生当前上下文。",
+          "分支无需复制文件；孤儿、环、重复 id 被拒绝。",
+          [
+            "sessionFormat",
+            "proGit"
+          ]
+        ],
+        [
+          "实现 resume / fork / export",
+          "恢复同一会话、从历史点分叉、导出可移植 JSONL。",
+          "回放得到与保存时相同的权威状态摘要。",
+          [
+            "sessionsDoc",
+            "harnessSession"
+          ]
+        ],
+        [
+          "实现原子与并发写入策略",
+          "明确单写者、flush、锁或队列语义。",
+          "模拟并发写和中途终止，不产生交错半行。",
+          [
+            "harnessSession",
+            "jsonLines"
+          ]
+        ],
+        [
+          "写 Session migration 测试",
+          "为版本字段、未知 entry 与未来兼容制定策略。",
+          "旧 fixture 永久进入测试集；迁移不静默丢数据。",
+          [
+            "sessionFormat",
+            "vitest"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "memory",
+      "title": "Compaction、摘要与记忆",
+      "weeks": "1–2 周",
+      "hours": "12–16h",
+      "output": "可度量的上下文压缩器",
+      "why": "上下文窗口有限，但压缩是有损操作。应保存原始事实，把摘要视为可替换的派生物。",
+      "resources": [
+        "compactionDoc",
+        "harnessCompaction",
+        "harnessMemory",
+        "aiAgentCh3",
+        "helloMemory",
+        "coala",
+        "langchainMemory",
+        "langgraphMemory",
+        "letta",
+        "langmem",
+        "memgptPaper",
+        "longHarness",
+        "lostMiddle"
+      ],
+      "tasks": [
+        [
+          "实现 token budget 触发器",
+          "估算消息成本，在阈值前预留下一轮输出与工具空间。",
+          "边界测试覆盖超长单消息、图片、工具结果与模型切换。",
+          [
+            "compactionDoc",
+            "harnessCompaction"
+          ]
+        ],
+        [
+          "实现 branch-aware summary",
+          "摘要目标、关键决策、文件变化、未完成事项与必要原文。",
+          "从任一分支继续时不混入旁支结论。",
+          [
+            "harnessCompaction",
+            "memgptPaper"
+          ]
+        ],
+        [
+          "比较三种记忆层",
+          "对话压缩、结构化事实、可检索长期记忆分别做小实验。",
+          "用相同 20 个任务比较召回、错误注入、token 与延迟。",
+          [
+            "letta",
+            "langmem",
+            "graphiti"
+          ]
+        ],
+        [
+          "建立 compaction eval",
+          "用 TypeScript fixture 设计针刺信息、关键约束、已完成修改与时间关系测试集。",
+          "每次修改摘要 prompt 都能看到保真率变化，而非凭感觉。",
+          [
+            "zepPaper",
+            "vitest"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "coding-tools",
+      "title": "编码工具、信任与沙箱",
+      "weeks": "2 周",
+      "hours": "16–22h",
+      "output": "有策略边界的 coding runtime",
+      "why": "read/bash/edit/write 看似简单，却同时涉及路径穿越、竞态、命令注入、secret 和不可逆副作用。",
+      "resources": [
+        "harnessTools",
+        "trust",
+        "owaspAgent",
+        "claudeSandbox",
+        "trustworthyAgents",
+        "gvisor",
+        "missingCn"
+      ],
+      "tasks": [
+        [
+          "实现受根目录约束的 read/write",
+          "规范化路径、处理 symlink、限制大小与二进制内容。",
+          "路径穿越和 TOCTOU 测试失败时默认拒绝。",
+          [
+            "harnessTools",
+            "owaspAgent"
+          ]
+        ],
+        [
+          "实现可验证 edit",
+          "支持精确 old/new 或 patch，检测零匹配、多匹配与并发修改。",
+          "修改前后 hash 可追踪；冲突不会覆盖用户改动。",
+          [
+            "harnessTools",
+            "proGit"
+          ]
+        ],
+        [
+          "实现 bash runner",
+          "分离 argv/shell 模式，流式 stdout/stderr，处理 timeout、signal 与 output cap。",
+          "恶意参数、无限输出、子进程树与取消都有测试。",
+          [
+            "harnessTools",
+            "missingCn"
+          ]
+        ],
+        [
+          "加入 project trust 与审批策略",
+          "区分只读、可逆写入、执行、网络与凭据能力。",
+          "未信任项目不能自动获得高风险权限；审批记录可审计。",
+          [
+            "trust",
+            "owaspAgent"
+          ]
+        ],
+        [
+          "在沙箱运行不可信任务",
+          "用容器或 gVisor 设置只读挂载、临时写层、网络策略和短期凭据。",
+          "演示 prompt injection 尝试读 secret / 出网时被边界阻止。",
+          [
+            "gvisor",
+            "owaspAgent"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "tui",
+      "title": "TUI 与事件驱动交互",
+      "weeks": "1–2 周",
+      "hours": "12–16h",
+      "output": "只消费事件的终端 UI",
+      "why": "UI 应是状态的观察者和控制器，而不是第二套 Agent 状态。事件驱动 TUI 是学习单向数据流的好实验。",
+      "resources": [
+        "tuiDoc",
+        "tuiSource",
+        "bubbleTea",
+        "elmArch"
+      ],
+      "tasks": [
+        [
+          "学习 Model–Update–View",
+          "用 Bubble Tea/Elm 示例理解 message 驱动状态更新，再映射到 Pi TUI。",
+          "能画出 core event → UI message → model → view 的单向图。",
+          [
+            "bubbleTea",
+            "elmArch"
+          ]
+        ],
+        [
+          "实现事件时间线 renderer",
+          "显示 streaming text、thinking、tool progress、error 与 usage。",
+          "同一录制事件流可离线重放，输出确定。",
+          [
+            "tuiSource",
+            "tuiDoc"
+          ]
+        ],
+        [
+          "实现输入与控制命令",
+          "prompt、steer、follow-up、abort、model switch 都调用核心公开 API。",
+          "UI 不直接改 AgentState；忙碌/空闲状态下命令行为明确。",
+          [
+            "tuiDoc",
+            "agentClass"
+          ]
+        ],
+        [
+          "处理终端细节",
+          "resize、宽字符、键盘、粘贴、低色彩、非 TTY 与清理。",
+          "在窄终端和异常退出后不留下损坏的终端状态。",
+          [
+            "tuiSource",
+            "bubbleTea"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "extensions",
+      "title": "Extensions、Skills 与生命周期",
+      "weeks": "1–2 周",
+      "hours": "12–16h",
+      "output": "可发现、可约束的扩展系统",
+      "why": "Pi 保持核心最小，把变化放到扩展层。关键不是动态 import，而是契约、优先级、隔离与失败语义。",
+      "resources": [
+        "extensionsDoc",
+        "skillsDoc",
+        "resourceLoader",
+        "agentSkills",
+        "pluggy",
+        "mcp"
+      ],
+      "tasks": [
+        [
+          "定义 extension hooks",
+          "覆盖 session start、before/after tool、context transform、event 与 shutdown。",
+          "hook 顺序稳定；一个扩展失败不会留下半更新状态。",
+          [
+            "extensionsDoc",
+            "pluggy"
+          ]
+        ],
+        [
+          "实现发现与配置优先级",
+          "加载用户级、项目级、命令行指定扩展，并记录来源。",
+          "同名冲突、禁用、重载和配置错误都有清晰诊断。",
+          [
+            "resourceLoader",
+            "extensionsDoc"
+          ]
+        ],
+        [
+          "实现 Agent Skills 加载器",
+          "解析 SKILL.md frontmatter，先发现元数据，再按需读取正文/脚本/资源。",
+          "通过官方约束校验 name/description；不把所有 skill 一次塞进上下文。",
+          [
+            "agentSkills",
+            "skillsDoc"
+          ]
+        ],
+        [
+          "比较 Extension / Skill / MCP",
+          "写一张选择表：进程内 hook、知识工作流、跨进程能力各自边界。",
+          "为三个真实需求做选择，并包含权限、版本与可测试性理由。",
+          [
+            "mcp",
+            "agentSkills"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "protocols",
+      "title": "SDK、RPC 与 Client/Server 协议",
+      "weeks": "2 周",
+      "hours": "16–22h",
+      "output": "同一核心的三种集成边界",
+      "why": "嵌入同进程、控制子进程和远程会话是不同信任/故障模型，不能用一个“API”含糊覆盖。",
+      "resources": [
+        "sdkDoc",
+        "rpcDoc",
+        "protocol",
+        "client",
+        "server",
+        "jsonRpc",
+        "cbor"
+      ],
+      "tasks": [
+        [
+          "提炼稳定 SDK surface",
+          "暴露 createSession、prompt、subscribe、abort 与 snapshot，隐藏内部可变状态。",
+          "一个无 UI Node 脚本只靠公开 API 完成任务并退出。",
+          [
+            "sdkDoc",
+            "agentSession"
+          ]
+        ],
+        [
+          "实现 LF-delimited JSONL RPC",
+          "stdin 接收命令，stdout 只发事件，stderr 专门诊断。",
+          "正确处理 U+2028/U+2029、半行、超长行和进程退出。",
+          [
+            "rpcDoc",
+            "jsonLines"
+          ]
+        ],
+        [
+          "实现 framing + CBOR codec",
+          "4-byte big-endian length + 严格 CBOR 子集，限制 frame/深度/集合大小。",
+          "随机分片/合并输入都能解码；畸形长度在缓冲前被拒绝。",
+          [
+            "protocol",
+            "cbor"
+          ]
+        ],
+        [
+          "实现权威 snapshot client",
+          "request id 关联响应，progress 只做 UI hint，server snapshot 才更新状态。",
+          "乱序响应、断连、重复订阅和 listener 异常不破坏客户端状态。",
+          [
+            "client",
+            "protocol"
+          ]
+        ],
+        [
+          "实现 session server 与 lease",
+          "认证在 transport 前完成；支持 exclusive/shared acquisition 与释放。",
+          "两个客户端竞争会话时行为确定，失败释放可协调恢复。",
+          [
+            "server",
+            "client"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "quality",
+      "title": "测试、Telemetry、Eval 与安全回归",
+      "weeks": "2 周",
+      "hours": "18–24h",
+      "output": "能证明改动没有让 Agent 退化",
+      "why": "Agent 的“偶尔成功”没有工程意义。需要分别验证确定性 runtime、模型行为、系统任务与对抗边界。",
+      "resources": [
+        "evals",
+        "telemetry",
+        "aiAgentCh6",
+        "evalAnthropic",
+        "otel",
+        "otelAgent",
+        "promptfoo",
+        "tauBench",
+        "sweBench",
+        "fastCheck",
+        "vitest",
+        "nodeTest"
+      ],
+      "tasks": [
+        [
+          "建立测试金字塔",
+          "单测类型/状态机，property test 协议，integration test fake model，e2e test 隔离任务。",
+          "每层明确确定性、成本与失败定位价值。",
+          [
+            "vitest",
+            "fastCheck"
+          ]
+        ],
+        [
+          "设计 Agent trace",
+          "一个 run 为 root span，model/tool/compaction 为 child spans，记录 token、延迟与 stop reason。",
+          "不记录 secret/完整敏感 prompt；跨进程保留 trace context。",
+          [
+            "otel",
+            "telemetry"
+          ]
+        ],
+        [
+          "建立行为 eval 数据集",
+          "用 TypeScript 覆盖工具选择、参数正确性、任务完成、约束遵守、恢复与成本。",
+          "固定模型/参数/fixture，输出可比较 JSON 与置信区间。",
+          [
+            "promptfoo",
+            "evals"
+          ]
+        ],
+        [
+          "做 coding task benchmark",
+          "从 10 个本地 issue 开始，再理解 SWE-bench 的容器、patch 与 test 判定。",
+          "报告 resolved、patch validity、tests、token、wall time，不只看最终文本。",
+          [
+            "sweBench",
+            "evals"
+          ]
+        ],
+        [
+          "做红队与故障注入",
+          "测试 prompt injection、tool poisoning、secret exfiltration、无限循环、断网、坏 frame。",
+          "每个真实失败都沉淀最小回归测试和缓解层，而非只改 prompt。",
+          [
+            "promptfoo",
+            "owaspAgent"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "capstone-build",
+      "title": "Capstone：从零组装 Bao Agent SDK",
+      "weeks": "2–3 周",
+      "hours": "20–28h",
+      "output": "可演示、可评测、可解释的完整系统",
+      "why": "最后用一个窄而真实的 coding 场景，把所有层连起来；先做纵向切片，再增加 provider、UI 和远程能力。",
+      "resources": [
+        "pi",
+        "aiAgentBook",
+        "vitest",
+        "fastCheck",
+        "promptfoo",
+        "nodeStreams",
+        "rpcDoc",
+        "tuiDoc"
+      ],
+      "tasks": [
+        [
+          "冻结 v0.1 架构与范围",
+          "只支持一个 provider、read/search/edit/test 四工具、单仓库沙箱和单会话。",
+          "非目标明确写出：多 Agent、向量库、市场、漂亮聊天 UI。",
+          [
+            "aiAgentBook",
+            "twelveFactor"
+          ]
+        ],
+        [
+          "完成 TypeScript vertical slice",
+          "core → session → coding runtime → CLI，一条命令处理示例 issue。",
+          "全新环境按 README 可复现，失败时有结构化状态与 trace。",
+          [
+            "pi",
+            "sdkDoc"
+          ]
+        ],
+        [
+          "完成 TypeScript Eval Harness",
+          "用 Vitest、fast-check 和 Promptfoo 运行固定任务、property tests 与红队案例。",
+          "评测数据、scorer、报告生成均为 TypeScript；每次运行可复现并可比较。",
+          [
+            "vitest",
+            "fastCheck",
+            "promptfoo"
+          ]
+        ],
+        [
+          "完成 TypeScript 集成客户端",
+          "用 Node.js 子进程启动 RPC Agent，订阅事件和权威 snapshot，并提供最小终端控制界面。",
+          "客户端断开、重连和恢复不会伪造 Agent 状态；集成测试覆盖完整生命周期。",
+          [
+            "rpcDoc",
+            "client",
+            "nodeStreams"
+          ]
+        ],
+        [
+          "完成安全与可靠性演示",
+          "展示不可信指令试图越权，以及 policy/sandbox/approval 如何阻止。",
+          "演示脚本固定、日志可审计、凭据为短期且最小范围。",
+          [
+            "owaspAgent",
+            "gvisor"
+          ]
+        ],
+        [
+          "写复盘与 v0.2 决策",
+          "比较你的实现与 Pi：保留了什么、简化了什么、哪里失败、下一步依据是什么。",
+          "用 eval/trace 数据决定下一特性，而不是按框架功能表继续堆。",
+          [
+            "evals",
+            "telemetry"
+          ]
+        ]
+      ]
+    }
+  ]
+}
+
